@@ -1,112 +1,172 @@
-:root{--bg-main:#1f2b1f;--bg-panel:#243624;--bg-card:#2e4430;--text-main:#eef4ee;--text-muted:#c7d3c7;--line:#3e5a3e;--good:#3fd37f;--bad:#ff6b6b;--btn:#2a3c2a;--btn2:#355035;}
-*{box-sizing:border-box}
-body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg-main);color:var(--text-main);}
+/* =========================
+   Base / reset
+   ========================= */
+* {
+  box-sizing: border-box;
+}
 
-/* ===== Teacher Modal ===== */
-.modal-backdrop{
-  position:fixed; inset:0;
-  background:rgba(0,0,0,.55);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:18px;
-  z-index:9999;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+               sans-serif;
+  background-color: #1f2f1f; /* army green */
+  color: #f2f5f2;
 }
-.modal{
-  width:min(980px, 100%);
-  background:var(--bg-panel);
-  border:1px solid var(--line);
-  border-radius:16px;
-  box-shadow: 0 20px 60px rgba(0,0,0,.45);
-  overflow:hidden;
-}
-.modal-head{
-  display:flex;
-  align-items:flex-start;
-  justify-content:space-between;
-  gap:10px;
-  padding:14px 14px;
-  border-bottom:1px solid var(--line);
-}
-.modal-title{font-weight:900; font-size:18px}
-.modal-sub{color:var(--text-muted); font-size:13px; margin-top:2px}
-.modal-body{padding:14px}
-.field{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-bottom:12px}
-.input{
-  background:rgba(0,0,0,.15);
-  border:1px solid var(--line);
-  color:var(--text-main);
-  padding:10px 12px;
-  border-radius:12px;
-  font-size:14px;
-  min-width:220px;
-}
-.table{width:100%; border-collapse:collapse; font-size:13px;}
-.table th,.table td{border-bottom:1px solid rgba(255,255,255,.08); padding:8px 8px; text-align:left; vertical-align:top;}
-.table th{color:var(--text-muted); font-weight:800}
-.ok{color:var(--good); font-weight:800}
-.no{color:var(--bad); font-weight:800}
 
-/* === Pill / rounded buttons (restore) === */
-button,
-.btn,
-.pill {
+/* =========================
+   App container (CENTERED)
+   ========================= */
+#app {
+  max-width: 1100px;
+  margin: 0 auto;               /* center horizontally */
+  padding: 20px 24px 40px;
+}
+
+/* =========================
+   Header / top bar
+   ========================= */
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.topbar h1,
+.topbar h2,
+.topbar .subtitle {
+  width: 100%;
+  margin: 0 0 6px 0;
+}
+
+/* =========================
+   Image area
+   ========================= */
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 14px 0 18px;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 420px;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+  background: #000;
+}
+
+/* =========================
+   Text blocks
+   ========================= */
+.section {
+  margin-bottom: 14px;
+}
+
+.small {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* =========================
+   BUTTONS – unified style
+   ========================= */
+button {
   appearance: none;
   border: 1px solid rgba(255,255,255,0.25);
-  background: rgba(0,0,0,0.28);
+  background-color: #2f3f2f; /* SAME COLOR EVERYWHERE */
   color: #f3f6f3;
-  padding: 10px 14px;
-  border-radius: 999px; /* pill */
+
+  padding: 11px 16px;
+  border-radius: 999px;
+
   font-size: 15px;
   font-weight: 600;
-  letter-spacing: 0.2px;
   cursor: pointer;
-  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.12s ease,
+    box-shadow 0.12s ease;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
-button:hover,
-.btn:hover,
-.pill:hover {
-  background: rgba(0,0,0,0.38);
-  border-color: rgba(255,255,255,0.38);
+button:hover {
+  background-color: #3a4f3a;
+  border-color: rgba(255,255,255,0.4);
   transform: translateY(-1px);
 }
 
-button:active,
-.btn:active,
-.pill:active {
-  transform: translateY(0px);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.22);
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-button:focus-visible,
-.btn:focus-visible,
-.pill:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(255,255,255,0.22), 0 6px 18px rgba(0,0,0,0.25);
-}
-
-button:disabled,
-.btn:disabled,
-.pill:disabled {
+button:disabled {
   opacity: 0.45;
   cursor: not-allowed;
-  transform: none;
 }
 
-/* Make header buttons stand out a bit more */
-.topbar button {
-  background: rgba(255,255,255,0.10);
+/* =========================
+   Option buttons (MCQ)
+   ========================= */
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;              /* SPACING BETWEEN BUTTONS */
+  margin-top: 12px;
 }
 
-.topbar button:hover {
-  background: rgba(255,255,255,0.16);
-}
-
-/* Option buttons (MCQ) a bit bigger */
 .options button {
-  min-height: 46px;
-  padding: 12px 14px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  text-align: center;
   font-size: 16px;
+  padding: 14px 18px;
+}
+
+/* =========================
+   Feedback colors
+   ========================= */
+button.correct {
+  background-color: #2f6b3f; /* green */
+  border-color: #7fd39b;
+  color: #eafff0;
+}
+
+button.wrong {
+  background-color: #6b2f2f; /* red */
+  border-color: #e29a9a;
+  color: #ffecec;
+}
+
+/* =========================
+   Streak / info bar
+   ========================= */
+.statusbar {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* =========================
+   Practice chooser
+   ========================= */
+.practice-chooser {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* =========================
+   Footer spacing safety
+   ========================= */
+.spacer {
+  height: 24px;
 }
