@@ -71,7 +71,17 @@
     }
     .modal h2{margin:0 0 8px 0;font-size:18px}
     .modal .muted{margin:0 0 12px 0}
-  </style>
+  
+    .overlay.show{display:flex;}
+    .ghost{background:transparent;border:1px solid var(--line);color:var(--text);}
+    .ghost:hover{border-color:rgba(96,165,250,.6);}
+    .modeGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px;}
+    @media (max-width:720px){ .modeGrid{grid-template-columns:1fr;} }
+    .modeBtn{padding:14px;border-radius:16px;border:1px solid var(--line);background:rgba(2,6,23,.35);color:var(--text);text-align:left;cursor:pointer;}
+    .modeBtn:hover{border-color:rgba(56,189,248,.55);background:rgba(2,6,23,.5);}
+    .modeTitle{font-weight:800;font-size:16px;margin-bottom:6px;}
+    .modeDesc{color:var(--muted);font-size:13px;line-height:1.35;}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -82,8 +92,8 @@
       <div class="muted">Step 1: classify • Step 2: name • max 10 per round.</div>
     </div>
     <div class="row">
-      <div class="pill" id="stepPill">Step: …</div>
-      <button id="restart" class="primary">New round (10)</button>
+      <button id="restart" class="primary">New round (0/10)</button>
+      <button id="changePractice" class="ghost">Change practice</button>
       <button id="reset">Reset</button>
     </div>
   </header>
@@ -127,6 +137,7 @@
         <div class="row" style="margin-top:10px">
           <button id="next" class="primary" disabled>Next</button>
         </div>
+        <div id="instantFeedback" class="muted" style="margin-top:8px;min-height:18px"></div>
 
         <div style="margin-top:10px" class="panel" id="scorePanel">
           Streak: <b id="streak">0</b> • Correct: <b id="correct">0</b> / <b id="total">0</b>
@@ -147,6 +158,24 @@
     </div>
 </div>
 
+
+  <!-- Practice mode overlay -->
+  <div class="overlay" id="modeOverlay" aria-hidden="true">
+    <div class="modal">
+      <h2>What do you want to practise today?</h2>
+      <p class="muted">Choose one option.</p>
+      <div class="modeGrid">
+        <button class="modeBtn" id="modeClassOnly">
+          <div class="modeTitle">1) Classification only</div>
+          <div class="modeDesc">6 options • instant feedback • auto next</div>
+        </button>
+        <button class="modeBtn" id="modeClassName">
+          <div class="modeTitle">2) Classification + naming</div>
+          <div class="modeDesc">6 class options, then 6 name options</div>
+        </button>
+      </div>
+    </div>
+  </div>
 <div class="overlay" id="overlay">
   <div class="modal">
     <h2>Correct answer</h2>
@@ -163,12 +192,26 @@ const $ = (s)=>document.querySelector(s);
 let DATA=null;
 let state=null;
 
-function loadState(){
-  const raw = localStorage.getItem("nl_def_speaking_state_offline_v7");
-  if(raw) return JSON.parse(raw);
-  return { branch:"army", runOrder:[], idx:0, step:"class", streak:0, correct:0, total:0, answers:{}, usedByBranch:{}, revealPending:false };
+function getSteps(){
+  const base = (DATA && DATA.settings && DATA.settings.steps) ? DATA.settings.steps : {};
+  const steps = JSON.parse(JSON.stringify(base||{}));
+  steps.classificationFirst = true;
+  steps.requireName = (state && state.mode === 'classOnly') ? false : true;
+  steps.classMcqOptions = 6;
+  steps.nameMcqOptions = 6;
+  steps.inputModeName = 'mcq';
+  return steps;
 }
-function saveState(){ localStorage.setItem("nl_def_speaking_state_offline_v7", JSON.stringify(state)); }
+
+function showModeOverlay(){ $('#modeOverlay').classList.add('show'); $('#modeOverlay').setAttribute('aria-hidden','false'); }
+function hideModeOverlay(){ $('#modeOverlay').classList.remove('show'); $('#modeOverlay').setAttribute('aria-hidden','true'); }
+
+function loadState(){
+  const raw = localStorage.getItem("nl_def_speaking_state_offline_v8");
+  if(raw) return JSON.parse(raw);
+  return { branch:"army", mode:null, runOrder:[], idx:0, step:"class", streak:0, correct:0, total:0, answers:{}, usedByBranch:{}, revealPending:false, flash:"", locked:false };
+}
+function saveState(){ localStorage.setItem("nl_def_speaking_state_offline_v8", JSON.stringify(state)); }
 function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
 function normalize(s){ return (s||"").trim().toLowerCase(); }
 function isCorrectName(q, user){
@@ -213,7 +256,9 @@ function buildNewRound(){
   const picked = candidates.slice(0, Math.min(quizLength, qs.length));
   state.runOrder = picked;
   state.idx = 0;
-  state.step = (DATA.settings?.steps?.classificationFirst ? "class" : "name");
+  const steps = getSteps();
+  state.step = steps.classificationFirst ? "class" : "name";
+  state.flash=""; state.locked=false;
   state.revealPending = false;
 
   const newUsed = (state.usedByBranch[state.branch] || []).concat(picked);
@@ -230,6 +275,7 @@ function buildOptions(pool, correct, k){
 }
 
 function render(){
+  if(!state.mode){ showModeOverlay(); }
   if(!state.runOrder || state.runOrder.length===0) buildNewRound();
   const q = currentQ();
   if(!q){ $("#title").textContent="No items yet."; return; }
@@ -261,7 +307,6 @@ function render(){
   const done = (steps.classificationFirst ? (classDone && (!requireName || nameDone)) : (nameDone || classDone));
 
   $("#next").disabled = !done;
-  $("#stepPill").textContent = steps.classificationFirst
     ? (classDone ? (requireName ? "Step: Name" : "Step: Done") : "Step: Class")
     : "Step: Name";
 
@@ -281,11 +326,30 @@ function render(){
       btn.className="choiceBtn";
       btn.textContent=opt;
       btn.onclick=()=>{
+        if(state.locked) return;
         const ok = isCorrectClass(q, opt);
         if(!state.answers[q.id]) state.answers[q.id]={};
         state.answers[q.id].class = opt;
         state.answers[q.id].classCorrect = ok;
-        // streak/score is based on FULL task (class + name if required), so we only record after name (or if name not required)
+
+        // Class-only practice: score immediately + instant feedback + auto next
+        if(state.mode==='classOnly'){
+          state.total += 1;
+          if(ok){ state.correct += 1; state.streak += 1; state.flash='✓ Correct'; }
+          else { state.streak = 0; state.flash='✗ Incorrect'; }
+          state.locked = true;
+          saveState();
+          render();
+          setTimeout(()=>{
+            state.locked = false;
+            state.flash = '';
+            saveState();
+            advanceIndex();
+          }, 650);
+          return;
+        }
+
+        // Otherwise: score after the name step (or if name not required)
         if(!requireName){
           state.total += 1;
           if(ok){ state.correct += 1; state.streak += 1; } else { state.streak = 0; }
@@ -393,10 +457,17 @@ async function init(){
 
   state = loadState();
   if(!state.usedByBranch) state.usedByBranch = {};
+
+  // Practice mode selection
+  $("#modeClassOnly").onclick = ()=>{ state.mode='classOnly'; saveState(); hideModeOverlay(); buildNewRound(); render(); };
+  $("#modeClassName").onclick = ()=>{ state.mode='className'; saveState(); hideModeOverlay(); buildNewRound(); render(); };
+  $("#changePractice").onclick = ()=>{ showModeOverlay(); };
+
+  if(!state.mode){ showModeOverlay(); }
   if(!state.runOrder || state.runOrder.length===0) buildNewRound();
 
   $("#restart").onclick = ()=>{ buildNewRound(); render(); };
-  $("#reset").onclick = ()=>{ localStorage.removeItem("nl_def_speaking_state_offline_v7"); state=loadState(); if(!state.usedByBranch) state.usedByBranch={}; buildNewRound(); render(); };
+  $("#reset").onclick = ()=>{ localStorage.removeItem("nl_def_speaking_state_offline_v8"); state=loadState(); if(!state.usedByBranch) state.usedByBranch={}; buildNewRound(); render(); };
 
   $("#next").onclick = next;
   $("#continueBtn").onclick = ()=>{ hideOverlay(); advanceIndex(); };
