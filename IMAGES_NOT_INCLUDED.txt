@@ -1,1 +1,0 @@
-This package includes only a placeholder missing.jpg. Add your real images to app/images/.
