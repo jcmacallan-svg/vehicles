@@ -1,21 +1,3 @@
 {
-  "quizLength": 10,
-  "mcqOptions": 6,
-  "vehicleClasses": [
-    "Battle Tank (BT)",
-    "Armoured Infantry Fighting Vehicle (AIFV)",
-    "Armoured Patrol Vehicle (AP)",
-    "Armoured Personnel Carrier (APC)",
-    "Heavy Armament Combat Vehicle (HACV)",
-    "(Armoured) Engineer Vehicle ((A)EV)",
-    "(Armoured) Vehicle Laying Bridge ((A)VLB)",
-    "(Armoured) Recovery Vehicle ((A)RV)",
-    "Artillery (Art)",
-    "Air Defence (AD)",
-    "Reconnaissance Vehicle (RV)",
-    "Armoured Cars (AC)"
-  ],
-  "questions": [],
-  "service": "luchtmacht",
-  "title": "NL Defence Speaking Trainer"
+  "note": "placeholder luchtmacht data"
 }
