@@ -8,7 +8,7 @@
     "steps": {
       "classificationFirst": true,
       "requireName": true,
-      "inputModeName": "type",
+      "inputModeName": "mcq",
       "nameMcqOptions": 5,
       "classMcqOptions": 5
     }

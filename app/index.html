@@ -23,7 +23,7 @@
     h1{margin:0;font-size:20px}
     .kicker{color:var(--accent);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
     .pill{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px;background:rgba(15,23,42,.35)}
-    .grid{display:grid;grid-template-columns:1.25fr .75fr;gap:14px;margin-top:14px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
     @media (max-width: 950px){.grid{grid-template-columns:1fr}}
     .card{background:linear-gradient(180deg,rgba(15,23,42,.95),rgba(17,28,51,.92));
       border:1px solid var(--line);border-radius:18px;box-shadow:0 14px 30px rgba(0,0,0,.35);
@@ -138,26 +138,13 @@
           <ul id="frames"></ul>
         </div>
 
-        <details style="margin-top:12px">
-          <summary>Results overview (end of round)</summary>
-          <div class="row" style="margin-top:10px">
-            <button class="primary" id="finish">Show overview</button>
-          </div>
-          <div id="results" style="margin-top:12px;display:none"></div>
-        </details>
+        <div id="resultsWrap" style="margin-top:12px;display:none">
+  <div class="panel info"><b>Results (end of round)</b></div>
+  <div id="results" style="margin-top:12px;display:none"></div>
+</div>
       </div>
     </section>
-
-    <aside class="card">
-      <div class="bd">
-        <div class="panel info">
-          <b>Teacher notes</b><br/>
-          • Add a <code>"class"</code> field per question in <code>app/data.json</code> (choose from <code>vehicleClasses</code>).<br/>
-          • The app will first ask for the class, then the name.
-        </div>
-      </div>
-    </aside>
-  </div>
+    </div>
 </div>
 
 <div class="overlay" id="overlay">
@@ -396,6 +383,7 @@ function finish(){
       </table>
     </div>
   `;
+  $("#resultsWrap").style.display="block";
   $("#results").style.display="block";
 }
 
@@ -430,7 +418,7 @@ async function init(){
     render();
   };
 
-  $("#finish").onclick = finish;
+  const finishBtn = $("#finish"); if(finishBtn) finishBtn.onclick = finish;
   render();
 }
 init();
