@@ -1,0 +1,25 @@
+{
+  "quizLength": 10,
+  "mcqOptions": 6,
+  "vehicleClasses": [
+    "Armoured Personnel Carrier (APC)",
+    "Infantry Fighting Vehicle (IFV)",
+    "Armoured Patrol Vehicle (APV)",
+    "Main Battle Tank (MBT)",
+    "Artillery",
+    "Engineer Vehicle",
+    "Logistics / Support Vehicle",
+    "Unarmoured Vehicle"
+  ],
+  "questions": [
+    {
+      "id": "missing",
+      "asset": "missing",
+      "class": "Armoured Patrol Vehicle",
+      "answer": "Missing",
+      "aliases": [
+        "missing"
+      ]
+    }
+  ]
+}
