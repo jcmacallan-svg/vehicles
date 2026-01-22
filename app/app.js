@@ -29,6 +29,36 @@
   function getTeacherPin(){ var p=localStorage.getItem("teacherPin"); if(!p){ p="1357"; localStorage.setItem("teacherPin", p); } return p; }
   function openTeacherModal(){ $("teacherModal").style.display="flex"; }
   function closeTeacherModal(){ $("teacherModal").style.display="none"; $("teacherModalBody").innerHTML=""; }
+
+  function openTheoryModal(){ $("theoryModal").style.display="flex"; renderTheoryContent(); }
+  function closeTheoryModal(){ $("theoryModal").style.display="none"; }
+  function renderTheoryContent(){
+    if(!DATA) return;
+    var desc = {
+      "Battle Tank (BT)": "Heavily armoured tracked combat vehicle with a large-calibre main gun.",
+      "Armoured Infantry Fighting Vehicle (AIFV)": "Carries infantry and can fight: cannon/AT weapons, tracked or wheeled.",
+      "Armoured Patrol Vehicle (AP)": "Light armoured patrol / security vehicle, usually wheeled.",
+      "Armoured Personnel Carrier (APC)": "Protected troop transport; weapon is usually lighter than an AIFV.",
+      "Heavy Armament Combat Vehicle (HACV)": "Heavily armed combat vehicle that is not a tank (e.g., heavy gun/missile platform).",
+      "(Armoured) Engineer Vehicle ((A)EV)": "Engineer support: breaching, earthmoving, route clearance, CBRN, etc.",
+      "(Armoured) Vehicle Laying Bridge ((A)VLB)": "Bridge-layer vehicle to create crossings quickly.",
+      "(Armoured) Recovery Vehicle ((A)RV)": "Recovery/repair/towing vehicle for damaged armour.",
+      "Artillery (Art)": "Indirect fire systems (howitzers, rocket artillery).",
+      "Air Defence (AD)": "Air defence systems (SHORAD/SAM) to protect against aircraft/helos/UAS.",
+      "Reconnaissance Vehicle (RV)": "Recon/scout platform for observation and target acquisition.",
+      "Armoured Cars (AC)": "Other (often wheeled) vehicles in the set: cars/trucks/support platforms."
+    };
+    var html = "<div class='lead'>Quick refresher of the 12 categories used in this trainer:</div>";
+    html += "<div class='theory-grid'>";
+    for(var i=0;i<DATA.vehicleClasses.length;i++){
+      var k = DATA.vehicleClasses[i];
+      html += "<div class='theory-card'><div class='theory-k'>"+escapeHtml(k)+"</div><div class='small'>"+escapeHtml(desc[k]||"")+"</div></div>";
+    }
+    html += "</div>";
+    html += "<div class='small' style='margin-top:10px'>Teaching tip: ask students to say <em>why</em> (tracks/wheels, turret, weapon size, role) before clicking.</div>";
+    $("theoryContent").innerHTML = html;
+  }
+
   function teacherModalLocked(){ return "<div class='field'><input class='input' id='pinInput' type='password' placeholder='Teacher PIN' /><button class='btn' id='unlockBtn' type='button'>Unlock</button></div><div class='small'>Default PIN: <strong>1357</strong> (change it after unlocking).</div>"; }
   function teacherModalUnlocked(){ var html="<div class='field'><span class='small'>PIN unlocked.</span><input class='input' id='newPin' type='text' placeholder='Set new PIN' /><button class='btn' id='setPinBtn' type='button'>Update PIN</button></div>"; html+="<table class='table'><thead><tr><th>#</th><th>Asset</th><th>Correct class</th><th>Student class</th><th>Correct name</th><th>Student name</th><th>OK</th></tr></thead><tbody>";
     for(var i=0;i<state.attempts.length;i++){ var a=state.attempts[i]; var okOverall=(state.mode==='class')?a.okClass:(a.okClass && a.okName); html+="<tr><td>"+(i+1)+"</td><td>"+escapeHtml(a.asset)+"</td><td>"+escapeHtml(a.correctClass)+"</td><td>"+escapeHtml(a.pickedClass||"")+"</td><td>"+escapeHtml(a.correctName)+"</td><td>"+escapeHtml(a.pickedName||"")+"</td><td class='"+(okOverall?"ok":"no")+"'>"+(okOverall?"✓":"✖")+"</td></tr>"; }
@@ -36,6 +66,9 @@
   function showTeacherModal(){ openTeacherModal(); $("teacherModalBody").innerHTML=teacherModalLocked(); $("unlockBtn").onclick=function(){ var v=$("pinInput").value; if(v===getTeacherPin()){ $("teacherModalBody").innerHTML=teacherModalUnlocked(); $("setPinBtn").onclick=function(){ var nv=$("newPin").value; if(nv && nv.length>=4){ localStorage.setItem("teacherPin", nv); $("newPin").value=""; $("newPin").placeholder="PIN updated ✓"; } else { $("newPin").value=""; $("newPin").placeholder="Use 4+ digits"; } }; } else { $("pinInput").value=""; $("pinInput").placeholder="Wrong PIN"; } }; }
   function renderEnd(){ var el=$("screen"); el.innerHTML="<div class='screen-title'>Round finished</div><div class='lead'>Totals only. Detailed answers are hidden (teacher-only).</div><div class='badge'><span>✅ Correct <strong>"+state.correct+"</strong> / "+state.round.length+"</span><span>🔥 Best streak <strong>"+state.bestStreak+"</strong></span></div><div class='footer-actions'><button class='btn' id='endNewRound'>New round</button><button class='btn ghost' id='endChange'>Change practice</button><button class='btn' id='teacherBtn'>Teacher results</button></div><div class='small' style='margin-top:10px'>Tip: set your own PIN in Teacher results.</div>";
     $("endNewRound").onclick=function(){ startNewRound(); }; $("endChange").onclick=function(){ state.mode=null; renderStart(); }; $("teacherBtn").onclick=function(){ showTeacherModal(); }; updateTop(); }
-  function init(){ fetch("data.json").then(function(r){ return r.json(); }).then(function(d){ DATA=d; setSubtitle(); $("resetBtn").onclick=function(){ resetAll(); }; $("newRoundBtn").onclick=function(){ startNewRound(); }; $("changePracticeBtn").onclick=function(){ state.mode=null; renderStart(); }; $("closeTeacherModal").onclick=function(){ closeTeacherModal(); }; $("teacherModal").addEventListener("click", function(e){ if(e.target && e.target.id==="teacherModal") closeTeacherModal(); }); renderStart(); updateTop(); }).catch(function(err){ $("screen").innerHTML="<div class='screen-title'>Error</div><div class='lead'>Could not load data.json.</div><pre class='small'>"+escapeHtml(String(err))+"</pre>"; }); }
+  function init(){ fetch("data.json").then(function(r){ return r.json(); }).then(function(d){ DATA=d; setSubtitle(); $("resetBtn").onclick=function(){ resetAll(); }; $("newRoundBtn").onclick=function(){ startNewRound(); }; $("changePracticeBtn").onclick=function(){ state.mode=null; renderStart(); };
+          var tb=$("theoryBtn"); if(tb){ tb.onclick=function(){ openTheoryModal(); }; }
+          var ctb=$("closeTheoryBtn"); if(ctb){ ctb.onclick=function(){ closeTheoryModal(); }; }
+          var tm=$("theoryModal"); if(tm){ tm.addEventListener("click", function(e){ if(e.target && e.target.id==="theoryModal") closeTheoryModal(); }); } $("closeTeacherModal").onclick=function(){ closeTeacherModal(); }; $("teacherModal").addEventListener("click", function(e){ if(e.target && e.target.id==="teacherModal") closeTeacherModal(); }); renderStart(); updateTop(); }).catch(function(err){ $("screen").innerHTML="<div class='screen-title'>Error</div><div class='lead'>Could not load data.json.</div><pre class='small'>"+escapeHtml(String(err))+"</pre>"; }); }
   document.addEventListener("DOMContentLoaded", init);
 })();

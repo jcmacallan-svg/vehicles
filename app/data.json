@@ -2,20 +2,24 @@
   "quizLength": 10,
   "mcqOptions": 6,
   "vehicleClasses": [
+    "Battle Tank (BT)",
+    "Armoured Infantry Fighting Vehicle (AIFV)",
+    "Armoured Patrol Vehicle (AP)",
     "Armoured Personnel Carrier (APC)",
-    "Infantry Fighting Vehicle (IFV)",
-    "Armoured Patrol Vehicle (APV)",
-    "Main Battle Tank (MBT)",
-    "Artillery",
-    "Engineer Vehicle",
-    "Logistics / Support Vehicle",
-    "Unarmoured Vehicle"
+    "Heavy Armament Combat Vehicle (HACV)",
+    "(Armoured) Engineer Vehicle ((A)EV)",
+    "(Armoured) Vehicle Laying Bridge ((A)VLB)",
+    "(Armoured) Recovery Vehicle ((A)RV)",
+    "Artillery (Art)",
+    "Air Defence (AD)",
+    "Reconnaissance Vehicle (RV)",
+    "Armoured Cars (AC)"
   ],
   "questions": [
     {
       "id": "lm_actros-brandweerwagen_1",
       "asset": "actros-brandweerwagen",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Actros Brandweerwagen",
       "aliases": [
         "actros brandweerwagen"
@@ -24,7 +28,7 @@
     {
       "id": "lm_amarok-pick-uptruck_2",
       "asset": "amarok-pick-uptruck",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Amarok Pick Uptruck",
       "aliases": [
         "amarok pick uptruck"
@@ -33,7 +37,7 @@
     {
       "id": "lm_anaconda-terreinwagen_3",
       "asset": "anaconda-terreinwagen",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Anaconda Terreinwagen",
       "aliases": [
         "anaconda terreinwagen"
@@ -78,7 +82,7 @@
     {
       "id": "lm_cbrn-ontsmettingssysteem-zware-uitvoering_8",
       "asset": "cbrn-ontsmettingssysteem-zware-uitvoering",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Engineer Vehicle ((A)EV)",
       "answer": "CBRN Ontsmettingssysteem Zware Uitvoering",
       "aliases": [
         "cbrn ontsmettingssysteem zware uitvoering"
@@ -87,7 +91,7 @@
     {
       "id": "lm_cv90-infanteriegevechtsvoertuig_9",
       "asset": "cv90-infanteriegevechtsvoertuig",
-      "class": "Infantry Fighting Vehicle (IFV)",
+      "class": "Armoured Infantry Fighting Vehicle (AIFV)",
       "answer": "CV90 Infanteriegevechtsvoertuig",
       "aliases": [
         "cv90 infanteriegevechtsvoertuig"
@@ -96,7 +100,7 @@
     {
       "id": "lm_daf-takelwagens_10",
       "asset": "daf-takelwagens",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "DAF Takelwagens",
       "aliases": [
         "daf takelwagens"
@@ -105,7 +109,7 @@
     {
       "id": "lm_daf-trekker-opleggercombinatie_11",
       "asset": "daf-trekker-opleggercombinatie",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "DAF Trekker Opleggercombinatie",
       "aliases": [
         "daf trekker opleggercombinatie"
@@ -114,7 +118,7 @@
     {
       "id": "lm_daf-ya-4442-de-4-tonner_12",
       "asset": "daf-ya-4442-de-4-tonner",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "DAF Ya 4442 De 4 Tonner",
       "aliases": [
         "daf ya 4442 de 4 tonner"
@@ -123,7 +127,7 @@
     {
       "id": "lm_daf-yac-2300_13",
       "asset": "daf-yac-2300",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "DAF Yac 2300",
       "aliases": [
         "daf yac 2300"
@@ -132,7 +136,7 @@
     {
       "id": "lm_e-one-titan-crashtender_14",
       "asset": "e-one-titan-crashtender",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "E One Titan Crashtender",
       "aliases": [
         "e one titan crashtender"
@@ -141,7 +145,7 @@
     {
       "id": "lm_explosievenrobot-dragon-runner_15",
       "asset": "explosievenrobot-dragon-runner",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Engineer Vehicle ((A)EV)",
       "answer": "Explosievenrobot Dragon Runner",
       "aliases": [
         "explosievenrobot dragon runner"
@@ -150,7 +154,7 @@
     {
       "id": "lm_explosievenrobot-telemax_16",
       "asset": "explosievenrobot-telemax",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Engineer Vehicle ((A)EV)",
       "answer": "Explosievenrobot Telemax",
       "aliases": [
         "explosievenrobot telemax"
@@ -159,7 +163,7 @@
     {
       "id": "lm_explosievenrobot-teodor_17",
       "asset": "explosievenrobot-teodor",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Engineer Vehicle ((A)EV)",
       "answer": "Explosievenrobot Teodor",
       "aliases": [
         "explosievenrobot teodor"
@@ -168,7 +172,7 @@
     {
       "id": "lm_fennek-verkenningsvoertuig_18",
       "asset": "fennek-verkenningsvoertuig",
-      "class": "Armoured Patrol Vehicle (APV)",
+      "class": "Reconnaissance Vehicle (RV)",
       "answer": "Fennek Verkenningsvoertuig",
       "aliases": [
         "fennek verkenningsvoertuig"
@@ -186,7 +190,7 @@
     {
       "id": "lm_grondverzetmachines_20",
       "asset": "grondverzetmachines",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Engineer Vehicle ((A)EV)",
       "answer": "Grondverzetmachines",
       "aliases": [
         "grondverzetmachines"
@@ -195,7 +199,7 @@
     {
       "id": "lm_ktm-motorfiets_21",
       "asset": "ktm-motorfiets",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Ktm Motorfiets",
       "aliases": [
         "ktm motorfiets"
@@ -204,7 +208,7 @@
     {
       "id": "lm_land-rover-defender-110xd-ww_22",
       "asset": "land-rover-defender-110xd-ww",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Land Rover Defender 110xd WW",
       "aliases": [
         "land rover defender 110xd ww"
@@ -213,7 +217,7 @@
     {
       "id": "lm_leopard-1-beach-armoured-recovery-vehicle_23",
       "asset": "leopard-1-beach-armoured-recovery-vehicle",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Recovery Vehicle ((A)RV)",
       "answer": "Leopard 1 Beach Armoured Recovery Vehicle",
       "aliases": [
         "leopard 1 beach armoured recovery vehicle"
@@ -222,7 +226,7 @@
     {
       "id": "lm_leopard-1-bergingstank_24",
       "asset": "leopard-1-bergingstank",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Recovery Vehicle ((A)RV)",
       "answer": "Leopard 1 Bergingstank",
       "aliases": [
         "leopard 1 bergingstank"
@@ -231,7 +235,7 @@
     {
       "id": "lm_leopard-2-a6-gevechtstank_25",
       "asset": "leopard-2-a6-gevechtstank",
-      "class": "Main Battle Tank (MBT)",
+      "class": "Battle Tank (BT)",
       "answer": "Leopard 2 A6 Gevechtstank",
       "aliases": [
         "leopard 2 a6 gevechtstank"
@@ -240,7 +244,7 @@
     {
       "id": "lm_leopard-2-bergingstank-buffel_26",
       "asset": "leopard-2-bergingstank-buffel",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Recovery Vehicle ((A)RV)",
       "answer": "Leopard 2 Bergingstank Buffel",
       "aliases": [
         "leopard 2 bergingstank buffel"
@@ -249,7 +253,7 @@
     {
       "id": "lm_leopard-2-brugleggende-tank-leguaan_27",
       "asset": "leopard-2-brugleggende-tank-leguaan",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Vehicle Laying Bridge ((A)VLB)",
       "answer": "Leopard 2 Brugleggende Tank Leguaan",
       "aliases": [
         "leopard 2 brugleggende tank leguaan"
@@ -258,7 +262,7 @@
     {
       "id": "lm_leopard-2-geniedoorbraaksysteem-kodiak_28",
       "asset": "leopard-2-geniedoorbraaksysteem-kodiak",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Engineer Vehicle ((A)EV)",
       "answer": "Leopard 2 Geniedoorbraaksysteem Kodiak",
       "aliases": [
         "leopard 2 geniedoorbraaksysteem kodiak"
@@ -267,7 +271,7 @@
     {
       "id": "lm_luchtmobiel-speciaal-voertuig_29",
       "asset": "luchtmobiel-speciaal-voertuig",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Luchtmobiel Speciaal Voertuig",
       "aliases": [
         "luchtmobiel speciaal voertuig"
@@ -276,7 +280,7 @@
     {
       "id": "lm_manticore-terreinvoertuig_30",
       "asset": "manticore-terreinvoertuig",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Manticore Terreinvoertuig",
       "aliases": [
         "manticore terreinvoertuig"
@@ -285,7 +289,7 @@
     {
       "id": "lm_meldkamer-op-locatie_31",
       "asset": "meldkamer-op-locatie",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Meldkamer Op Locatie",
       "aliases": [
         "meldkamer op locatie"
@@ -294,7 +298,7 @@
     {
       "id": "lm_mercedes-benz-290gd_32",
       "asset": "mercedes-benz-290gd",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Mercedes Benz 290GD",
       "aliases": [
         "mercedes benz 290gd"
@@ -303,7 +307,7 @@
     {
       "id": "lm_mercedes-benz-g280-cdi_33",
       "asset": "mercedes-benz-g280-cdi",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Mercedes Benz G280 Cdi",
       "aliases": [
         "mercedes benz g280 cdi"
@@ -312,7 +316,7 @@
     {
       "id": "lm_mercedes-benz-sprinter-315-cdi_34",
       "asset": "mercedes-benz-sprinter-315-cdi",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Mercedes Benz Sprinter 315 Cdi",
       "aliases": [
         "mercedes benz sprinter 315 cdi"
@@ -321,7 +325,7 @@
     {
       "id": "lm_mlc-70-wegenmatsysteem_35",
       "asset": "mlc-70-wegenmatsysteem",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Engineer Vehicle ((A)EV)",
       "answer": "MLC 70 Wegenmatsysteem",
       "aliases": [
         "mlc 70 wegenmatsysteem"
@@ -330,7 +334,7 @@
     {
       "id": "lm_mobiele-drinkwaterinstallatie_36",
       "asset": "mobiele-drinkwaterinstallatie",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Mobiele Drinkwaterinstallatie",
       "aliases": [
         "mobiele drinkwaterinstallatie"
@@ -339,7 +343,7 @@
     {
       "id": "lm_pantserhouwitser-2000nl_37",
       "asset": "pantserhouwitser-2000nl",
-      "class": "Artillery",
+      "class": "Artillery (Art)",
       "answer": "Pantserhouwitser 2000nl",
       "aliases": [
         "pantserhouwitser 2000nl"
@@ -348,7 +352,7 @@
     {
       "id": "lm_scania-gryphus-transportvoertuig_38",
       "asset": "scania-gryphus-transportvoertuig",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Scania Gryphus Transportvoertuig",
       "aliases": [
         "scania gryphus transportvoertuig"
@@ -357,7 +361,7 @@
     {
       "id": "lm_scania-wissellaadsysteem_39",
       "asset": "scania-wissellaadsysteem",
-      "class": "Logistics / Support Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Scania Wissellaadsysteem",
       "aliases": [
         "scania wissellaadsysteem"
@@ -366,7 +370,7 @@
     {
       "id": "lm_skoda-yeti_40",
       "asset": "skoda-yeti",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Skoda Yeti",
       "aliases": [
         "skoda yeti"
@@ -375,7 +379,7 @@
     {
       "id": "lm_suzuki-king-quad_41",
       "asset": "suzuki-king-quad",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Suzuki King Quad",
       "aliases": [
         "suzuki king quad"
@@ -384,7 +388,7 @@
     {
       "id": "lm_toyota-hilux-terreinwagen_42",
       "asset": "toyota-hilux-terreinwagen",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Toyota Hilux Terreinwagen",
       "aliases": [
         "toyota hilux terreinwagen"
@@ -393,7 +397,7 @@
     {
       "id": "lm_vector-terreinwagen-sof_43",
       "asset": "vector-terreinwagen-sof",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Vector Terreinwagen SOF",
       "aliases": [
         "vector terreinwagen sof"
@@ -402,7 +406,7 @@
     {
       "id": "lm_waterboorinstallatie_44",
       "asset": "waterboorinstallatie",
-      "class": "Engineer Vehicle",
+      "class": "(Armoured) Engineer Vehicle ((A)EV)",
       "answer": "Waterboorinstallatie",
       "aliases": [
         "waterboorinstallatie"
@@ -411,7 +415,7 @@
     {
       "id": "lm_yamaha-motorfiets_45",
       "asset": "yamaha-motorfiets",
-      "class": "Unarmoured Vehicle",
+      "class": "Armoured Cars (AC)",
       "answer": "Yamaha Motorfiets",
       "aliases": [
         "yamaha motorfiets"
@@ -420,7 +424,7 @@
     {
       "id": "lm_ypr-pantserrupsvoertuig_46",
       "asset": "ypr-pantserrupsvoertuig",
-      "class": "Armoured Personnel Carrier (APC)",
+      "class": "Armoured Infantry Fighting Vehicle (AIFV)",
       "answer": "Ypr Pantserrupsvoertuig",
       "aliases": [
         "ypr pantserrupsvoertuig"
