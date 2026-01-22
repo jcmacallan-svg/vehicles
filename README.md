@@ -1,43 +1,23 @@
-# NL Defensie Materieelherkenning – Speaking Trainer (Landmacht)
+# NL Defence Speaking Trainer (Landmacht)
 
-Static (offline-friendly) speaking trainer for A2/B1 English:
-- Step 1: choose **classification** (5 options)
-- Step 2: say + type the **platform name**
-- After Next: shows **correct class + name** with the same image
-- Each round: **10 random vehicles** (new mix every restart)
+A simple, offline-friendly speaking trainer for vehicle recognition.
 
-## Repo structure (important)
-```
-.
-├── app/                 # GitHub Pages site (static)
-│   ├── index.html
-│   ├── data.json
-│   └── images/          # <-- put your 46 JPGs here (same filenames as assets)
-├── tools/               # helper scripts
-└── spreadsheets/        # Excel templates
-```
+## GitHub Pages
+This repo deploys the `app/` folder to GitHub Pages via GitHub Actions.
 
-## Quick start (local)
-1) Put your images in `app/images/` (JPG).
-2) Open `app/index.html` in a browser.
+## Images
+Place your 46 Landmacht JPG images here:
+`app/images/<asset>.jpg`
 
-## Update / rebuild data.json from your images (optional)
-From repo root:
-```bash
-python3 tools/generate_data_from_images.py --images app/images --out app/data.json
-```
+Example:
+- `app/images/leopard-2-a6-gevechtstank.jpg`
+- `app/images/boxer-pantserwielvoertuig.jpg`
 
-## Apply classifications from Excel (optional)
-Fill `spreadsheets/vehicle_classification_template_filled.xlsx` (or your own), then:
-```bash
-python3 tools/apply_classifications.py --data app/data.json --in spreadsheets/vehicle_classification_template_filled.xlsx
-```
+If an image is missing, the app shows `missing.jpg`.
 
-## Publish online with GitHub Pages (recommended)
-This repo includes a GitHub Actions workflow that publishes the `app/` folder to GitHub Pages.
+## Practice modes
+- **Classification only**: 6 options, instant feedback, auto-next.
+- **Classification + naming**: 6 class options then 6 name options, reveal before Next.
 
-Steps:
-1. Create a new GitHub repo and push these files.
-2. In GitHub: **Settings → Pages**
-   - Source: **GitHub Actions**
-3. Open the Pages URL GitHub shows.
+## No spoilers
+The end screen shows only totals (no answers list).

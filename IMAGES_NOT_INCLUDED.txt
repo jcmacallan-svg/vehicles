@@ -1,1 +1,1 @@
-Your 46 JPG images are not included in this zip (they are on your Mac). Copy them into app/images/ before publishing.
+This package includes only a placeholder missing.jpg. Add your real images to app/images/.
