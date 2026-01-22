@@ -1,0 +1,430 @@
+{
+  "quizLength": 10,
+  "mcqOptions": 6,
+  "vehicleClasses": [
+    "Armoured Personnel Carrier (APC)",
+    "Infantry Fighting Vehicle (IFV)",
+    "Armoured Patrol Vehicle (APV)",
+    "Main Battle Tank (MBT)",
+    "Artillery",
+    "Engineer Vehicle",
+    "Logistics / Support Vehicle",
+    "Unarmoured Vehicle"
+  ],
+  "questions": [
+    {
+      "id": "lm_actros-brandweerwagen_1",
+      "asset": "actros-brandweerwagen",
+      "class": "Logistics / Support Vehicle",
+      "answer": "Actros Brandweerwagen",
+      "aliases": [
+        "actros brandweerwagen"
+      ]
+    },
+    {
+      "id": "lm_amarok-pick-uptruck_2",
+      "asset": "amarok-pick-uptruck",
+      "class": "Unarmoured Vehicle",
+      "answer": "Amarok Pick Uptruck",
+      "aliases": [
+        "amarok pick uptruck"
+      ]
+    },
+    {
+      "id": "lm_anaconda-terreinwagen_3",
+      "asset": "anaconda-terreinwagen",
+      "class": "Unarmoured Vehicle",
+      "answer": "Anaconda Terreinwagen",
+      "aliases": [
+        "anaconda terreinwagen"
+      ]
+    },
+    {
+      "id": "lm_bandvagn-206-rupsvoertuig_4",
+      "asset": "bandvagn-206-rupsvoertuig",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Bandvagn 206 Rupsvoertuig",
+      "aliases": [
+        "bandvagn 206 rupsvoertuig"
+      ]
+    },
+    {
+      "id": "lm_bandvagn-s10-rupsvoertuig-viking_5",
+      "asset": "bandvagn-s10-rupsvoertuig-viking",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Bandvagn S10 Rupsvoertuig Viking",
+      "aliases": [
+        "bandvagn s10 rupsvoertuig viking"
+      ]
+    },
+    {
+      "id": "lm_boxer-pantserwielvoertuig_6",
+      "asset": "boxer-pantserwielvoertuig",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Boxer Pantserwielvoertuig",
+      "aliases": [
+        "boxer pantserwielvoertuig"
+      ]
+    },
+    {
+      "id": "lm_bushmaster_7",
+      "asset": "bushmaster",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Bushmaster",
+      "aliases": [
+        "bushmaster"
+      ]
+    },
+    {
+      "id": "lm_cbrn-ontsmettingssysteem-zware-uitvoering_8",
+      "asset": "cbrn-ontsmettingssysteem-zware-uitvoering",
+      "class": "Engineer Vehicle",
+      "answer": "CBRN Ontsmettingssysteem Zware Uitvoering",
+      "aliases": [
+        "cbrn ontsmettingssysteem zware uitvoering"
+      ]
+    },
+    {
+      "id": "lm_cv90-infanteriegevechtsvoertuig_9",
+      "asset": "cv90-infanteriegevechtsvoertuig",
+      "class": "Infantry Fighting Vehicle (IFV)",
+      "answer": "CV90 Infanteriegevechtsvoertuig",
+      "aliases": [
+        "cv90 infanteriegevechtsvoertuig"
+      ]
+    },
+    {
+      "id": "lm_daf-takelwagens_10",
+      "asset": "daf-takelwagens",
+      "class": "Logistics / Support Vehicle",
+      "answer": "DAF Takelwagens",
+      "aliases": [
+        "daf takelwagens"
+      ]
+    },
+    {
+      "id": "lm_daf-trekker-opleggercombinatie_11",
+      "asset": "daf-trekker-opleggercombinatie",
+      "class": "Logistics / Support Vehicle",
+      "answer": "DAF Trekker Opleggercombinatie",
+      "aliases": [
+        "daf trekker opleggercombinatie"
+      ]
+    },
+    {
+      "id": "lm_daf-ya-4442-de-4-tonner_12",
+      "asset": "daf-ya-4442-de-4-tonner",
+      "class": "Logistics / Support Vehicle",
+      "answer": "DAF Ya 4442 De 4 Tonner",
+      "aliases": [
+        "daf ya 4442 de 4 tonner"
+      ]
+    },
+    {
+      "id": "lm_daf-yac-2300_13",
+      "asset": "daf-yac-2300",
+      "class": "Logistics / Support Vehicle",
+      "answer": "DAF Yac 2300",
+      "aliases": [
+        "daf yac 2300"
+      ]
+    },
+    {
+      "id": "lm_e-one-titan-crashtender_14",
+      "asset": "e-one-titan-crashtender",
+      "class": "Logistics / Support Vehicle",
+      "answer": "E One Titan Crashtender",
+      "aliases": [
+        "e one titan crashtender"
+      ]
+    },
+    {
+      "id": "lm_explosievenrobot-dragon-runner_15",
+      "asset": "explosievenrobot-dragon-runner",
+      "class": "Engineer Vehicle",
+      "answer": "Explosievenrobot Dragon Runner",
+      "aliases": [
+        "explosievenrobot dragon runner"
+      ]
+    },
+    {
+      "id": "lm_explosievenrobot-telemax_16",
+      "asset": "explosievenrobot-telemax",
+      "class": "Engineer Vehicle",
+      "answer": "Explosievenrobot Telemax",
+      "aliases": [
+        "explosievenrobot telemax"
+      ]
+    },
+    {
+      "id": "lm_explosievenrobot-teodor_17",
+      "asset": "explosievenrobot-teodor",
+      "class": "Engineer Vehicle",
+      "answer": "Explosievenrobot Teodor",
+      "aliases": [
+        "explosievenrobot teodor"
+      ]
+    },
+    {
+      "id": "lm_fennek-verkenningsvoertuig_18",
+      "asset": "fennek-verkenningsvoertuig",
+      "class": "Armoured Patrol Vehicle (APV)",
+      "answer": "Fennek Verkenningsvoertuig",
+      "aliases": [
+        "fennek verkenningsvoertuig"
+      ]
+    },
+    {
+      "id": "lm_fuchs-pantservoertuig_19",
+      "asset": "fuchs-pantservoertuig",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Fuchs Pantservoertuig",
+      "aliases": [
+        "fuchs pantservoertuig"
+      ]
+    },
+    {
+      "id": "lm_grondverzetmachines_20",
+      "asset": "grondverzetmachines",
+      "class": "Engineer Vehicle",
+      "answer": "Grondverzetmachines",
+      "aliases": [
+        "grondverzetmachines"
+      ]
+    },
+    {
+      "id": "lm_ktm-motorfiets_21",
+      "asset": "ktm-motorfiets",
+      "class": "Unarmoured Vehicle",
+      "answer": "Ktm Motorfiets",
+      "aliases": [
+        "ktm motorfiets"
+      ]
+    },
+    {
+      "id": "lm_land-rover-defender-110xd-ww_22",
+      "asset": "land-rover-defender-110xd-ww",
+      "class": "Unarmoured Vehicle",
+      "answer": "Land Rover Defender 110xd WW",
+      "aliases": [
+        "land rover defender 110xd ww"
+      ]
+    },
+    {
+      "id": "lm_leopard-1-beach-armoured-recovery-vehicle_23",
+      "asset": "leopard-1-beach-armoured-recovery-vehicle",
+      "class": "Engineer Vehicle",
+      "answer": "Leopard 1 Beach Armoured Recovery Vehicle",
+      "aliases": [
+        "leopard 1 beach armoured recovery vehicle"
+      ]
+    },
+    {
+      "id": "lm_leopard-1-bergingstank_24",
+      "asset": "leopard-1-bergingstank",
+      "class": "Engineer Vehicle",
+      "answer": "Leopard 1 Bergingstank",
+      "aliases": [
+        "leopard 1 bergingstank"
+      ]
+    },
+    {
+      "id": "lm_leopard-2-a6-gevechtstank_25",
+      "asset": "leopard-2-a6-gevechtstank",
+      "class": "Main Battle Tank (MBT)",
+      "answer": "Leopard 2 A6 Gevechtstank",
+      "aliases": [
+        "leopard 2 a6 gevechtstank"
+      ]
+    },
+    {
+      "id": "lm_leopard-2-bergingstank-buffel_26",
+      "asset": "leopard-2-bergingstank-buffel",
+      "class": "Engineer Vehicle",
+      "answer": "Leopard 2 Bergingstank Buffel",
+      "aliases": [
+        "leopard 2 bergingstank buffel"
+      ]
+    },
+    {
+      "id": "lm_leopard-2-brugleggende-tank-leguaan_27",
+      "asset": "leopard-2-brugleggende-tank-leguaan",
+      "class": "Engineer Vehicle",
+      "answer": "Leopard 2 Brugleggende Tank Leguaan",
+      "aliases": [
+        "leopard 2 brugleggende tank leguaan"
+      ]
+    },
+    {
+      "id": "lm_leopard-2-geniedoorbraaksysteem-kodiak_28",
+      "asset": "leopard-2-geniedoorbraaksysteem-kodiak",
+      "class": "Engineer Vehicle",
+      "answer": "Leopard 2 Geniedoorbraaksysteem Kodiak",
+      "aliases": [
+        "leopard 2 geniedoorbraaksysteem kodiak"
+      ]
+    },
+    {
+      "id": "lm_luchtmobiel-speciaal-voertuig_29",
+      "asset": "luchtmobiel-speciaal-voertuig",
+      "class": "Unarmoured Vehicle",
+      "answer": "Luchtmobiel Speciaal Voertuig",
+      "aliases": [
+        "luchtmobiel speciaal voertuig"
+      ]
+    },
+    {
+      "id": "lm_manticore-terreinvoertuig_30",
+      "asset": "manticore-terreinvoertuig",
+      "class": "Unarmoured Vehicle",
+      "answer": "Manticore Terreinvoertuig",
+      "aliases": [
+        "manticore terreinvoertuig"
+      ]
+    },
+    {
+      "id": "lm_meldkamer-op-locatie_31",
+      "asset": "meldkamer-op-locatie",
+      "class": "Logistics / Support Vehicle",
+      "answer": "Meldkamer Op Locatie",
+      "aliases": [
+        "meldkamer op locatie"
+      ]
+    },
+    {
+      "id": "lm_mercedes-benz-290gd_32",
+      "asset": "mercedes-benz-290gd",
+      "class": "Unarmoured Vehicle",
+      "answer": "Mercedes Benz 290GD",
+      "aliases": [
+        "mercedes benz 290gd"
+      ]
+    },
+    {
+      "id": "lm_mercedes-benz-g280-cdi_33",
+      "asset": "mercedes-benz-g280-cdi",
+      "class": "Unarmoured Vehicle",
+      "answer": "Mercedes Benz G280 Cdi",
+      "aliases": [
+        "mercedes benz g280 cdi"
+      ]
+    },
+    {
+      "id": "lm_mercedes-benz-sprinter-315-cdi_34",
+      "asset": "mercedes-benz-sprinter-315-cdi",
+      "class": "Unarmoured Vehicle",
+      "answer": "Mercedes Benz Sprinter 315 Cdi",
+      "aliases": [
+        "mercedes benz sprinter 315 cdi"
+      ]
+    },
+    {
+      "id": "lm_mlc-70-wegenmatsysteem_35",
+      "asset": "mlc-70-wegenmatsysteem",
+      "class": "Engineer Vehicle",
+      "answer": "MLC 70 Wegenmatsysteem",
+      "aliases": [
+        "mlc 70 wegenmatsysteem"
+      ]
+    },
+    {
+      "id": "lm_mobiele-drinkwaterinstallatie_36",
+      "asset": "mobiele-drinkwaterinstallatie",
+      "class": "Logistics / Support Vehicle",
+      "answer": "Mobiele Drinkwaterinstallatie",
+      "aliases": [
+        "mobiele drinkwaterinstallatie"
+      ]
+    },
+    {
+      "id": "lm_pantserhouwitser-2000nl_37",
+      "asset": "pantserhouwitser-2000nl",
+      "class": "Artillery",
+      "answer": "Pantserhouwitser 2000nl",
+      "aliases": [
+        "pantserhouwitser 2000nl"
+      ]
+    },
+    {
+      "id": "lm_scania-gryphus-transportvoertuig_38",
+      "asset": "scania-gryphus-transportvoertuig",
+      "class": "Logistics / Support Vehicle",
+      "answer": "Scania Gryphus Transportvoertuig",
+      "aliases": [
+        "scania gryphus transportvoertuig"
+      ]
+    },
+    {
+      "id": "lm_scania-wissellaadsysteem_39",
+      "asset": "scania-wissellaadsysteem",
+      "class": "Logistics / Support Vehicle",
+      "answer": "Scania Wissellaadsysteem",
+      "aliases": [
+        "scania wissellaadsysteem"
+      ]
+    },
+    {
+      "id": "lm_skoda-yeti_40",
+      "asset": "skoda-yeti",
+      "class": "Unarmoured Vehicle",
+      "answer": "Skoda Yeti",
+      "aliases": [
+        "skoda yeti"
+      ]
+    },
+    {
+      "id": "lm_suzuki-king-quad_41",
+      "asset": "suzuki-king-quad",
+      "class": "Unarmoured Vehicle",
+      "answer": "Suzuki King Quad",
+      "aliases": [
+        "suzuki king quad"
+      ]
+    },
+    {
+      "id": "lm_toyota-hilux-terreinwagen_42",
+      "asset": "toyota-hilux-terreinwagen",
+      "class": "Unarmoured Vehicle",
+      "answer": "Toyota Hilux Terreinwagen",
+      "aliases": [
+        "toyota hilux terreinwagen"
+      ]
+    },
+    {
+      "id": "lm_vector-terreinwagen-sof_43",
+      "asset": "vector-terreinwagen-sof",
+      "class": "Unarmoured Vehicle",
+      "answer": "Vector Terreinwagen SOF",
+      "aliases": [
+        "vector terreinwagen sof"
+      ]
+    },
+    {
+      "id": "lm_waterboorinstallatie_44",
+      "asset": "waterboorinstallatie",
+      "class": "Engineer Vehicle",
+      "answer": "Waterboorinstallatie",
+      "aliases": [
+        "waterboorinstallatie"
+      ]
+    },
+    {
+      "id": "lm_yamaha-motorfiets_45",
+      "asset": "yamaha-motorfiets",
+      "class": "Unarmoured Vehicle",
+      "answer": "Yamaha Motorfiets",
+      "aliases": [
+        "yamaha motorfiets"
+      ]
+    },
+    {
+      "id": "lm_ypr-pantserrupsvoertuig_46",
+      "asset": "ypr-pantserrupsvoertuig",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Ypr Pantserrupsvoertuig",
+      "aliases": [
+        "ypr pantserrupsvoertuig"
+      ]
+    }
+  ]
+}

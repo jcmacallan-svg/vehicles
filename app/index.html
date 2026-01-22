@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NL Defence Speaking Trainer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">NL Defence Speaking Trainer</div>
+      <div class="subtitle" id="subtitle">Landmacht • 10 questions</div>
+    </div>
+
+    <div class="top-actions">
+      <div class="pill" id="roundPill">Round: 0/10</div>
+      <button class="btn ghost" id="changePracticeBtn" type="button">Change practice</button>
+      <button class="btn" id="newRoundBtn" type="button">New round</button>
+      <button class="btn danger" id="resetBtn" type="button">Reset</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card" id="screen"></section>
+  </main>
+
+  <div class="modal-backdrop" id="teacherModal" style="display:none">
+    <div class="modal">
+      <div class="modal-head">
+        <div>
+          <div class="modal-title">Teacher results</div>
+          <div class="modal-sub">Hidden by default. Unlock with a PIN.</div>
+        </div>
+        <button class="btn ghost" id="closeTeacherModal" type="button">Close</button>
+      </div>
+      <div class="modal-body" id="teacherModalBody"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
