@@ -1,0 +1,674 @@
+{
+  "version": "7.2-github-landmacht-filled",
+  "title": "NL Defensie Materieelherkenning – Speaking Trainer",
+  "settings": {
+    "quizLength": 10,
+    "showCorrectAfterNext": true,
+    "avoidImmediateRepeats": true,
+    "steps": {
+      "classificationFirst": true,
+      "requireName": true,
+      "inputModeName": "type",
+      "nameMcqOptions": 5,
+      "classMcqOptions": 5
+    }
+  },
+  "microTheory": [
+    "Short theory: WHAT & HURT (already known).",
+    "Step 1: choose the classification (BT / APC / Art / …).",
+    "Step 2: speak the name in English and type it.",
+    "After Next: you briefly see the correct class + name with the same image."
+  ],
+  "branches": [
+    {
+      "id": "army",
+      "label": "Landmacht"
+    }
+  ],
+  "vehicleClasses": [
+    "Battle Tank (BT)",
+    "Armoured Infantry Fighting Vehicle (AIFV)",
+    "Armoured Patrol Car (AP)",
+    "Armoured Personnel Carrier (APC)",
+    "Heavy Armament Combat Vehicle (HACV)",
+    "(Armoured) Engineer Vehicle (A/EV)",
+    "(Armoured) Vehicle Laying Bridge (A/VLB)",
+    "(Armoured) Recovery Vehicle (A/RV)",
+    "Artillery (Art)",
+    "Air Defence (AD)",
+    "Reconnaissance Vehicle (RV)",
+    "Armoured Cars (AC)"
+  ],
+  "speakingFrames": [
+    "Class: It looks like ___.",
+    "Name: I think it is a ___.",
+    "Because it has ___ (wheels/tracks/turret), it is ___.",
+    "Role: It is used for ___."
+  ],
+  "questions": [
+    {
+      "id": "army_actros-brandweerwagen_1",
+      "branch": "army",
+      "asset": "actros-brandweerwagen",
+      "class": "Armoured Cars (AC)",
+      "answer": "Mercedes-Benz Actros Fire Truck",
+      "aliases": [
+        "actros brandweerwagen",
+        "mercedes-benz",
+        "mercedes-benz actros",
+        "mercedes-benz actros fire truck"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_amarok-pick-uptruck_2",
+      "branch": "army",
+      "asset": "amarok-pick-uptruck",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Amarok Pickup Truck",
+      "aliases": [
+        "amarok",
+        "amarok pick uptruck",
+        "amarok pickup",
+        "amarok pickup truck"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_anaconda-terreinwagen_3",
+      "branch": "army",
+      "asset": "anaconda-terreinwagen",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Anaconda All Terrain Vehicle",
+      "aliases": [
+        "anaconda",
+        "anaconda all",
+        "anaconda all terrain vehicle",
+        "anaconda terreinwagen"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_bandvagn-206-rupsvoertuig_4",
+      "branch": "army",
+      "asset": "bandvagn-206-rupsvoertuig",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Bandvagn 206 Tracked Vehicle",
+      "aliases": [
+        "bandvagn",
+        "bandvagn 206",
+        "bandvagn 206 rupsvoertuig",
+        "bandvagn 206 tracked vehicle"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_bandvagn-s10-rupsvoertuig-viking_5",
+      "branch": "army",
+      "asset": "bandvagn-s10-rupsvoertuig-viking",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Bandvagn S10 Tracked Vehicle Viking",
+      "aliases": [
+        "bandvagn",
+        "bandvagn s10",
+        "bandvagn s10 rupsvoertuig viking",
+        "bandvagn s10 tracked vehicle viking"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_boxer-pantserwielvoertuig_6",
+      "branch": "army",
+      "asset": "boxer-pantserwielvoertuig",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Boxer Armoured Wheeled Vehicle",
+      "aliases": [
+        "boxer",
+        "boxer armoured",
+        "boxer armoured wheeled vehicle",
+        "boxer pantserwielvoertuig"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_bushmaster_7",
+      "branch": "army",
+      "asset": "bushmaster",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Bushmaster",
+      "aliases": [
+        "bushmaster"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_cbrn-ontsmettingssysteem-zware-uitvoering_8",
+      "branch": "army",
+      "asset": "cbrn-ontsmettingssysteem-zware-uitvoering",
+      "class": "(Armoured) Engineer Vehicle (A/EV)",
+      "answer": "CBRN Decontamination System Heavy Variant",
+      "aliases": [
+        "cbrn",
+        "cbrn decontamination",
+        "cbrn decontamination system heavy variant",
+        "cbrn ontsmettingssysteem zware uitvoering"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_cv90-infanteriegevechtsvoertuig_9",
+      "branch": "army",
+      "asset": "cv90-infanteriegevechtsvoertuig",
+      "class": "Armoured Infantry Fighting Vehicle (AIFV)",
+      "answer": "Cv90 Infantry Fighting Vehicle",
+      "aliases": [
+        "cv90",
+        "cv90 infanteriegevechtsvoertuig",
+        "cv90 infantry",
+        "cv90 infantry fighting vehicle"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_daf-takelwagens_10",
+      "branch": "army",
+      "asset": "daf-takelwagens",
+      "class": "Armoured Cars (AC)",
+      "answer": "Daf Recovery Truck",
+      "aliases": [
+        "daf",
+        "daf recovery",
+        "daf recovery truck",
+        "daf takelwagens"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_daf-trekker-opleggercombinatie_11",
+      "branch": "army",
+      "asset": "daf-trekker-opleggercombinatie",
+      "class": "Armoured Cars (AC)",
+      "answer": "Daf Tractor‑trailer Combination",
+      "aliases": [
+        "daf",
+        "daf tractortrailer",
+        "daf tractor‑trailer combination",
+        "daf trekker opleggercombinatie"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_daf-ya-4442-de-4-tonner_12",
+      "branch": "army",
+      "asset": "daf-ya-4442-de-4-tonner",
+      "class": "Armoured Cars (AC)",
+      "answer": "Daf Ya 4442 4‑ton Truck",
+      "aliases": [
+        "daf",
+        "daf ya",
+        "daf ya 4442 4‑ton truck",
+        "daf ya 4442 de 4 tonner"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_daf-yac-2300_13",
+      "branch": "army",
+      "asset": "daf-yac-2300",
+      "class": "Armoured Cars (AC)",
+      "answer": "Daf Yac 2300",
+      "aliases": [
+        "daf",
+        "daf yac",
+        "daf yac 2300"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_e-one-titan-crashtender_14",
+      "branch": "army",
+      "asset": "e-one-titan-crashtender",
+      "class": "Armoured Cars (AC)",
+      "answer": "E-One Titan Crash Tender",
+      "aliases": [
+        "e one titan crashtender",
+        "e-one",
+        "e-one titan",
+        "e-one titan crash tender"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_explosievenrobot-dragon-runner_15",
+      "branch": "army",
+      "asset": "explosievenrobot-dragon-runner",
+      "class": "(Armoured) Engineer Vehicle (A/EV)",
+      "answer": "Explosievenrobot Dragon Runner",
+      "aliases": [
+        "explosievenrobot",
+        "explosievenrobot dragon",
+        "explosievenrobot dragon runner"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_explosievenrobot-telemax_16",
+      "branch": "army",
+      "asset": "explosievenrobot-telemax",
+      "class": "(Armoured) Engineer Vehicle (A/EV)",
+      "answer": "Explosievenrobot Telemax",
+      "aliases": [
+        "explosievenrobot",
+        "explosievenrobot telemax"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_explosievenrobot-teodor_17",
+      "branch": "army",
+      "asset": "explosievenrobot-teodor",
+      "class": "(Armoured) Engineer Vehicle (A/EV)",
+      "answer": "Explosievenrobot Teodor",
+      "aliases": [
+        "explosievenrobot",
+        "explosievenrobot teodor"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_fennek-verkenningsvoertuig_18",
+      "branch": "army",
+      "asset": "fennek-verkenningsvoertuig",
+      "class": "Reconnaissance Vehicle (RV)",
+      "answer": "Fennek Reconnaissance Vehicle",
+      "aliases": [
+        "fennek",
+        "fennek reconnaissance",
+        "fennek reconnaissance vehicle",
+        "fennek verkenningsvoertuig"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_fuchs-pantservoertuig_19",
+      "branch": "army",
+      "asset": "fuchs-pantservoertuig",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Fuchs Armoured Vehicle",
+      "aliases": [
+        "fuchs",
+        "fuchs armoured",
+        "fuchs armoured vehicle",
+        "fuchs pantservoertuig"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_grondverzetmachines_20",
+      "branch": "army",
+      "asset": "grondverzetmachines",
+      "class": "(Armoured) Engineer Vehicle (A/EV)",
+      "answer": "Earthmoving Machinery",
+      "aliases": [
+        "earthmoving",
+        "earthmoving machinery",
+        "grondverzetmachines"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_ktm-motorfiets_21",
+      "branch": "army",
+      "asset": "ktm-motorfiets",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Ktm Motorcycle",
+      "aliases": [
+        "ktm",
+        "ktm motorcycle",
+        "ktm motorfiets"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_land-rover-defender-110xd-ww_22",
+      "branch": "army",
+      "asset": "land-rover-defender-110xd-ww",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Land Rover Defender 110xd Ww",
+      "aliases": [
+        "land",
+        "land rover",
+        "land rover defender 110xd ww"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_leopard-1-beach-armoured-recovery-vehicle_23",
+      "branch": "army",
+      "asset": "leopard-1-beach-armoured-recovery-vehicle",
+      "class": "(Armoured) Recovery Vehicle (A/RV)",
+      "answer": "Leopard 1 Beach Armoured Recovery Vehicle",
+      "aliases": [
+        "leopard",
+        "leopard 1",
+        "leopard 1 beach armoured recovery vehicle"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_leopard-1-bergingstank_24",
+      "branch": "army",
+      "asset": "leopard-1-bergingstank",
+      "class": "(Armoured) Recovery Vehicle (A/RV)",
+      "answer": "Leopard 1 Armoured Recovery Vehicle",
+      "aliases": [
+        "leopard",
+        "leopard 1",
+        "leopard 1 armoured recovery vehicle",
+        "leopard 1 bergingstank"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_leopard-2-a6-gevechtstank_25",
+      "branch": "army",
+      "asset": "leopard-2-a6-gevechtstank",
+      "class": "Battle Tank (BT)",
+      "answer": "Leopard 2A6 Main Battle Tank",
+      "aliases": [
+        "leopard",
+        "leopard 2 a6 gevechtstank",
+        "leopard 2a6",
+        "leopard 2a6 main battle tank"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_leopard-2-bergingstank-buffel_26",
+      "branch": "army",
+      "asset": "leopard-2-bergingstank-buffel",
+      "class": "(Armoured) Recovery Vehicle (A/RV)",
+      "answer": "Leopard 2 Armoured Recovery Vehicle Buffel",
+      "aliases": [
+        "leopard",
+        "leopard 2",
+        "leopard 2 armoured recovery vehicle buffel",
+        "leopard 2 bergingstank buffel"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_leopard-2-brugleggende-tank-leguaan_27",
+      "branch": "army",
+      "asset": "leopard-2-brugleggende-tank-leguaan",
+      "class": "(Armoured) Vehicle Laying Bridge (A/VLB)",
+      "answer": "Leopard 2 Armoured Vehicle Launched Bridge Leguaan",
+      "aliases": [
+        "leopard",
+        "leopard 2",
+        "leopard 2 armoured vehicle launched bridge leguaan",
+        "leopard 2 brugleggende tank leguaan"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_leopard-2-geniedoorbraaksysteem-kodiak_28",
+      "branch": "army",
+      "asset": "leopard-2-geniedoorbraaksysteem-kodiak",
+      "class": "(Armoured) Engineer Vehicle (A/EV)",
+      "answer": "Leopard 2 Armoured Engineer Vehicle Kodiak",
+      "aliases": [
+        "leopard",
+        "leopard 2",
+        "leopard 2 armoured engineer vehicle kodiak",
+        "leopard 2 geniedoorbraaksysteem kodiak"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_luchtmobiel-speciaal-voertuig_29",
+      "branch": "army",
+      "asset": "luchtmobiel-speciaal-voertuig",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Airmobile Special Operations Vehicle",
+      "aliases": [
+        "airmobile",
+        "airmobile special",
+        "airmobile special operations vehicle",
+        "luchtmobiel speciaal voertuig"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_manticore-terreinvoertuig_30",
+      "branch": "army",
+      "asset": "manticore-terreinvoertuig",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Manticore All Terrain Vehicle",
+      "aliases": [
+        "manticore",
+        "manticore all",
+        "manticore all terrain vehicle",
+        "manticore terreinvoertuig"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_meldkamer-op-locatie_31",
+      "branch": "army",
+      "asset": "meldkamer-op-locatie",
+      "class": "Armoured Cars (AC)",
+      "answer": "Mobile Command Post",
+      "aliases": [
+        "meldkamer op locatie",
+        "mobile",
+        "mobile command",
+        "mobile command post"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_mercedes-benz-290gd_32",
+      "branch": "army",
+      "asset": "mercedes-benz-290gd",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Mercedes-Benz 290gd",
+      "aliases": [
+        "mercedes benz 290gd",
+        "mercedes-benz",
+        "mercedes-benz 290gd"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_mercedes-benz-g280-cdi_33",
+      "branch": "army",
+      "asset": "mercedes-benz-g280-cdi",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Mercedes-Benz G280 Cdi",
+      "aliases": [
+        "mercedes benz g280 cdi",
+        "mercedes-benz",
+        "mercedes-benz g280",
+        "mercedes-benz g280 cdi"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_mercedes-benz-sprinter-315-cdi_34",
+      "branch": "army",
+      "asset": "mercedes-benz-sprinter-315-cdi",
+      "class": "Armoured Cars (AC)",
+      "answer": "Mercedes-Benz Sprinter 315 Cdi",
+      "aliases": [
+        "mercedes benz sprinter 315 cdi",
+        "mercedes-benz",
+        "mercedes-benz sprinter",
+        "mercedes-benz sprinter 315 cdi"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_mlc-70-wegenmatsysteem_35",
+      "branch": "army",
+      "asset": "mlc-70-wegenmatsysteem",
+      "class": "(Armoured) Engineer Vehicle (A/EV)",
+      "answer": "MLC 70 Road Mat System",
+      "aliases": [
+        "mlc",
+        "mlc 70",
+        "mlc 70 road mat system",
+        "mlc 70 wegenmatsysteem"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_mobiele-drinkwaterinstallatie_36",
+      "branch": "army",
+      "asset": "mobiele-drinkwaterinstallatie",
+      "class": "(Armoured) Engineer Vehicle (A/EV)",
+      "answer": "Mobile Drinking Water Unit",
+      "aliases": [
+        "mobiele drinkwaterinstallatie",
+        "mobile",
+        "mobile drinking",
+        "mobile drinking water unit"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_pantserhouwitser-2000nl_37",
+      "branch": "army",
+      "asset": "pantserhouwitser-2000nl",
+      "class": "Artillery (Art)",
+      "answer": "Pantserhouwitser 2000NL",
+      "aliases": [
+        "pantserhouwitser",
+        "pantserhouwitser 2000nl"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_scania-gryphus-transportvoertuig_38",
+      "branch": "army",
+      "asset": "scania-gryphus-transportvoertuig",
+      "class": "Armoured Cars (AC)",
+      "answer": "Scania Gryphus Transport Vehicle",
+      "aliases": [
+        "scania",
+        "scania gryphus",
+        "scania gryphus transport vehicle",
+        "scania gryphus transportvoertuig"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_scania-wissellaadsysteem_39",
+      "branch": "army",
+      "asset": "scania-wissellaadsysteem",
+      "class": "Armoured Cars (AC)",
+      "answer": "Scania Hooklift System",
+      "aliases": [
+        "scania",
+        "scania hooklift",
+        "scania hooklift system",
+        "scania wissellaadsysteem"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_skoda-yeti_40",
+      "branch": "army",
+      "asset": "skoda-yeti",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Skoda Yeti",
+      "aliases": [
+        "skoda",
+        "skoda yeti"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_suzuki-king-quad_41",
+      "branch": "army",
+      "asset": "suzuki-king-quad",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Suzuki King Quad",
+      "aliases": [
+        "suzuki",
+        "suzuki king",
+        "suzuki king quad"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_toyota-hilux-terreinwagen_42",
+      "branch": "army",
+      "asset": "toyota-hilux-terreinwagen",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Toyota Hilux All Terrain Vehicle",
+      "aliases": [
+        "toyota",
+        "toyota hilux",
+        "toyota hilux all terrain vehicle",
+        "toyota hilux terreinwagen"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_vector-terreinwagen-sof_43",
+      "branch": "army",
+      "asset": "vector-terreinwagen-sof",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Vector All Terrain Vehicle Sof",
+      "aliases": [
+        "vector",
+        "vector all",
+        "vector all terrain vehicle sof",
+        "vector terreinwagen sof"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_waterboorinstallatie_44",
+      "branch": "army",
+      "asset": "waterboorinstallatie",
+      "class": "(Armoured) Engineer Vehicle (A/EV)",
+      "answer": "Water Drilling Unit",
+      "aliases": [
+        "water",
+        "water drilling",
+        "water drilling unit",
+        "waterboorinstallatie"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_yamaha-motorfiets_45",
+      "branch": "army",
+      "asset": "yamaha-motorfiets",
+      "class": "Armoured Patrol Car (AP)",
+      "answer": "Yamaha Motorcycle",
+      "aliases": [
+        "yamaha",
+        "yamaha motorcycle",
+        "yamaha motorfiets"
+      ],
+      "source": "local-images"
+    },
+    {
+      "id": "army_ypr-pantserrupsvoertuig_46",
+      "branch": "army",
+      "asset": "ypr-pantserrupsvoertuig",
+      "class": "Armoured Personnel Carrier (APC)",
+      "answer": "Ypr Armoured Tracked Vehicle",
+      "aliases": [
+        "ypr",
+        "ypr armoured",
+        "ypr armoured tracked vehicle",
+        "ypr pantserrupsvoertuig"
+      ],
+      "source": "local-images"
+    }
+  ]
+}
