@@ -1,21 +1,144 @@
 {
   "quizLength": 10,
   "mcqOptions": 6,
-  "vehicleClasses": [
-    "Battle Tank (BT)",
-    "Armoured Infantry Fighting Vehicle (AIFV)",
-    "Armoured Patrol Vehicle (AP)",
-    "Armoured Personnel Carrier (APC)",
-    "Heavy Armament Combat Vehicle (HACV)",
-    "(Armoured) Engineer Vehicle ((A)EV)",
-    "(Armoured) Vehicle Laying Bridge ((A)VLB)",
-    "(Armoured) Recovery Vehicle ((A)RV)",
-    "Artillery (Art)",
-    "Air Defence (AD)",
-    "Reconnaissance Vehicle (RV)",
-    "Armoured Cars (AC)"
+  "classes": [
+    "Fighter Aircraft",
+    "Transport Aircraft",
+    "Helicopter",
+    "Trainer Aircraft",
+    "Uncrewed Aerial System (UAS)",
+    "Other"
   ],
-  "questions": [],
-  "service": "luchtmacht",
-  "title": "NL Defence Speaking Trainer"
+  "questions": [
+    {
+      "id": "af_f-35-lightning-ii-jachtvliegtuig_1",
+      "asset": "f-35-lightning-ii-jachtvliegtuig",
+      "class": "UNKNOWN",
+      "answer": "F-35 Lightning II-jachtvliegtuig",
+      "aliases": [
+        "f-35 lightning ii-jachtvliegtuig"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/f-35-gevechtsvliegtuig"
+    },
+    {
+      "id": "af_f-16-uit-dienst_2",
+      "asset": "f-16-uit-dienst",
+      "class": "UNKNOWN",
+      "answer": "F-16 (uit dienst)",
+      "aliases": [
+        "f-16 (uit dienst)"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/f-16"
+    },
+    {
+      "id": "af_apache-gevechtshelikopter-ah-64_3",
+      "asset": "apache-gevechtshelikopter-ah-64",
+      "class": "UNKNOWN",
+      "answer": "Apache-gevechtshelikopter (AH-64)",
+      "aliases": [
+        "apache-gevechtshelikopter (ah-64)"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/apache-gevechtshelikopter-ah-64"
+    },
+    {
+      "id": "af_nh90-maritieme-gevechtshelikopter_4",
+      "asset": "nh90-maritieme-gevechtshelikopter",
+      "class": "UNKNOWN",
+      "answer": "NH90-maritieme gevechtshelikopter",
+      "aliases": [
+        "nh90-maritieme gevechtshelikopter"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/nh90"
+    },
+    {
+      "id": "af_chinook-transporthelikopter_5",
+      "asset": "chinook-transporthelikopter",
+      "class": "UNKNOWN",
+      "answer": "Chinook-transporthelikopter",
+      "aliases": [
+        "chinook-transporthelikopter"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/boeing-ch-47f-chinook-transporthelikopter"
+    },
+    {
+      "id": "af_cougar-transporthelikopter_6",
+      "asset": "cougar-transporthelikopter",
+      "class": "UNKNOWN",
+      "answer": "Cougar-transporthelikopter",
+      "aliases": [
+        "cougar-transporthelikopter"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/cougar-transporthelikopter"
+    },
+    {
+      "id": "af_mq-9-reaper_7",
+      "asset": "mq-9-reaper",
+      "class": "UNKNOWN",
+      "answer": "MQ-9 Reaper",
+      "aliases": [
+        "mq-9 reaper"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/mq-9-reaper"
+    },
+    {
+      "id": "af_black-hornet-onbemand-verkenningssysteem_8",
+      "asset": "black-hornet-onbemand-verkenningssysteem",
+      "class": "UNKNOWN",
+      "answer": "Black Hornet-onbemand verkenningssysteem",
+      "aliases": [
+        "black hornet-onbemand verkenningssysteem"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/black-hornet-onbemand-verkenningssysteem"
+    },
+    {
+      "id": "af_raven-onbemand-verkenningssysteem_9",
+      "asset": "raven-onbemand-verkenningssysteem",
+      "class": "UNKNOWN",
+      "answer": "Raven-onbemand verkenningssysteem",
+      "aliases": [
+        "raven-onbemand verkenningssysteem"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/raven-mini-uav"
+    },
+    {
+      "id": "af_x-300-integrator-onbemand-verkenningssysteem_10",
+      "asset": "x-300-integrator-onbemand-verkenningssysteem",
+      "class": "UNKNOWN",
+      "answer": "X-300 Integrator onbemand verkenningssysteem",
+      "aliases": [
+        "x-300 integrator onbemand verkenningssysteem"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/x-300-integrator-onbemand-verkenningssysteem"
+    },
+    {
+      "id": "af_c-130-hercules-transportvliegtuig_11",
+      "asset": "c-130-hercules-transportvliegtuig",
+      "class": "UNKNOWN",
+      "answer": "C-130 Hercules-transportvliegtuig",
+      "aliases": [
+        "c-130 hercules-transportvliegtuig"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/c-130-hercules-transportvliegtuig"
+    },
+    {
+      "id": "af_pilatus-pc-7-turbo-trainer_12",
+      "asset": "pilatus-pc-7-turbo-trainer",
+      "class": "UNKNOWN",
+      "answer": "Pilatus PC-7 Turbo Trainer",
+      "aliases": [
+        "pilatus pc-7 turbo trainer"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/pilatus-pc-7-turbo-trainer"
+    },
+    {
+      "id": "af_gulfstream-g650er_13",
+      "asset": "gulfstream-g650er",
+      "class": "UNKNOWN",
+      "answer": "Gulfstream G650ER",
+      "aliases": [
+        "gulfstream g650er"
+      ],
+      "source_page": "https://www.defensie.nl/onderwerpen/materieel/vliegtuigen-en-helikopters/gulfstream-g650er"
+    }
+  ]
 }
