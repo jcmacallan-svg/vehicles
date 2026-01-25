@@ -13,7 +13,7 @@
     {
       "id": "af_f-35-lightning-ii-jachtvliegtuig_1",
       "asset": "f-35-lightning-ii-jachtvliegtuig",
-      "class": "UNKNOWN",
+      "class": "Fighter Aircraft",
       "answer": "F-35 Lightning II-jachtvliegtuig",
       "aliases": [
         "f-35 lightning ii-jachtvliegtuig"
@@ -23,7 +23,7 @@
     {
       "id": "af_f-16-uit-dienst_2",
       "asset": "f-16-uit-dienst",
-      "class": "UNKNOWN",
+      "class": "Fighter Aircraft",
       "answer": "F-16 (uit dienst)",
       "aliases": [
         "f-16 (uit dienst)"
@@ -33,7 +33,7 @@
     {
       "id": "af_apache-gevechtshelikopter-ah-64_3",
       "asset": "apache-gevechtshelikopter-ah-64",
-      "class": "UNKNOWN",
+      "class": "Helicopter",
       "answer": "Apache-gevechtshelikopter (AH-64)",
       "aliases": [
         "apache-gevechtshelikopter (ah-64)"
@@ -43,7 +43,7 @@
     {
       "id": "af_nh90-maritieme-gevechtshelikopter_4",
       "asset": "nh90-maritieme-gevechtshelikopter",
-      "class": "UNKNOWN",
+      "class": "Helicopter",
       "answer": "NH90-maritieme gevechtshelikopter",
       "aliases": [
         "nh90-maritieme gevechtshelikopter"
@@ -53,7 +53,7 @@
     {
       "id": "af_chinook-transporthelikopter_5",
       "asset": "chinook-transporthelikopter",
-      "class": "UNKNOWN",
+      "class": "Helicopter",
       "answer": "Chinook-transporthelikopter",
       "aliases": [
         "chinook-transporthelikopter"
@@ -63,7 +63,7 @@
     {
       "id": "af_cougar-transporthelikopter_6",
       "asset": "cougar-transporthelikopter",
-      "class": "UNKNOWN",
+      "class": "Helicopter",
       "answer": "Cougar-transporthelikopter",
       "aliases": [
         "cougar-transporthelikopter"
@@ -73,7 +73,7 @@
     {
       "id": "af_mq-9-reaper_7",
       "asset": "mq-9-reaper",
-      "class": "UNKNOWN",
+      "class": "Uncrewed Aerial System (UAS)",
       "answer": "MQ-9 Reaper",
       "aliases": [
         "mq-9 reaper"
@@ -83,7 +83,7 @@
     {
       "id": "af_black-hornet-onbemand-verkenningssysteem_8",
       "asset": "black-hornet-onbemand-verkenningssysteem",
-      "class": "UNKNOWN",
+      "class": "Uncrewed Aerial System (UAS)",
       "answer": "Black Hornet-onbemand verkenningssysteem",
       "aliases": [
         "black hornet-onbemand verkenningssysteem"
@@ -93,7 +93,7 @@
     {
       "id": "af_raven-onbemand-verkenningssysteem_9",
       "asset": "raven-onbemand-verkenningssysteem",
-      "class": "UNKNOWN",
+      "class": "Uncrewed Aerial System (UAS)",
       "answer": "Raven-onbemand verkenningssysteem",
       "aliases": [
         "raven-onbemand verkenningssysteem"
@@ -103,7 +103,7 @@
     {
       "id": "af_x-300-integrator-onbemand-verkenningssysteem_10",
       "asset": "x-300-integrator-onbemand-verkenningssysteem",
-      "class": "UNKNOWN",
+      "class": "Uncrewed Aerial System (UAS)",
       "answer": "X-300 Integrator onbemand verkenningssysteem",
       "aliases": [
         "x-300 integrator onbemand verkenningssysteem"
@@ -113,7 +113,7 @@
     {
       "id": "af_c-130-hercules-transportvliegtuig_11",
       "asset": "c-130-hercules-transportvliegtuig",
-      "class": "UNKNOWN",
+      "class": "Transport Aircraft",
       "answer": "C-130 Hercules-transportvliegtuig",
       "aliases": [
         "c-130 hercules-transportvliegtuig"
@@ -123,7 +123,7 @@
     {
       "id": "af_pilatus-pc-7-turbo-trainer_12",
       "asset": "pilatus-pc-7-turbo-trainer",
-      "class": "UNKNOWN",
+      "class": "Trainer Aircraft",
       "answer": "Pilatus PC-7 Turbo Trainer",
       "aliases": [
         "pilatus pc-7 turbo trainer"
@@ -133,7 +133,7 @@
     {
       "id": "af_gulfstream-g650er_13",
       "asset": "gulfstream-g650er",
-      "class": "UNKNOWN",
+      "class": "Other",
       "answer": "Gulfstream G650ER",
       "aliases": [
         "gulfstream g650er"
