@@ -1,0 +1,83 @@
+{
+  "domain": "marine",
+  "step": "what",
+  "title": "Ship Classification – What?",
+  "intro": {
+    "question": "What kind of ship is this?",
+    "explanation": "In this step, you choose the main task of the ship. You do not need the exact class or name yet. There are only three possible answers."
+  },
+  "categories": [
+    {
+      "id": "fighting_ship",
+      "label": "Fighting ship",
+      "description": {
+        "a2": "This ship is used to fight.",
+        "b1": "This ship is designed to fight enemy ships, submarines, or aircraft."
+      },
+      "features": [
+        "Carries weapons",
+        "Designed for combat",
+        "Protects other ships or areas"
+      ],
+      "examples": [
+        "Frigate",
+        "Destroyer",
+        "Submarine"
+      ],
+      "example_sentences": [
+        "This is a fighting ship.",
+        "It is used to fight the enemy."
+      ]
+    },
+    {
+      "id": "patrol_ship",
+      "label": "Patrol ship",
+      "description": {
+        "a2": "This ship patrols an area.",
+        "b1": "This ship patrols sea areas and checks activities at sea."
+      },
+      "features": [
+        "Patrols coastal or sea areas",
+        "Checks ships",
+        "Provides security"
+      ],
+      "examples": [
+        "Patrol vessel",
+        "Mine countermeasures vessel",
+        "Coast guard ship"
+      ],
+      "example_sentences": [
+        "This is a patrol ship.",
+        "It patrols an area."
+      ]
+    },
+    {
+      "id": "support_ship",
+      "label": "Support ship",
+      "description": {
+        "a2": "This ship helps other ships.",
+        "b1": "This ship supports naval operations and other ships."
+      },
+      "features": [
+        "Supplies fuel or cargo",
+        "Transports equipment",
+        "Supports operations"
+      ],
+      "examples": [
+        "Supply ship",
+        "Logistics ship",
+        "Amphibious transport ship"
+      ],
+      "example_sentences": [
+        "This is a support ship.",
+        "It supports other ships."
+      ]
+    }
+  ],
+  "rules": [
+    "This step is not about the exact ship class.",
+    "First choose the task category, then name the ship in the next step.",
+    "If you are not sure, choose Support ship and explain why."
+  ],
+  "summary": "Fighting ships fight. Patrol ships secure areas. Support ships help other ships."
+}

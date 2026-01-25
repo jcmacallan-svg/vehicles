@@ -1,0 +1,83 @@
+{
+  "domain": "luchtmacht",
+  "step": "what",
+  "title": "Aircraft Classification – What?",
+  "intro": {
+    "question": "What kind of aircraft is this?",
+    "explanation": "In this step, you choose the main mission of the aircraft. You do not need the exact name yet. There are only three possible answers."
+  },
+  "categories": [
+    {
+      "id": "combat_aircraft",
+      "label": "Combat",
+      "description": {
+        "a2": "This aircraft is used to fight.",
+        "b1": "This aircraft is used to attack targets or fight enemy aircraft."
+      },
+      "features": [
+        "Carries weapons",
+        "Used in combat missions",
+        "Attacks air or ground targets"
+      ],
+      "examples": [
+        "Fighter aircraft",
+        "Attack aircraft",
+        "Bomber aircraft"
+      ],
+      "example_sentences": [
+        "This is a combat aircraft.",
+        "It is used to fight the enemy."
+      ]
+    },
+    {
+      "id": "transport_aircraft",
+      "label": "Transport",
+      "description": {
+        "a2": "This aircraft carries people or cargo.",
+        "b1": "This aircraft transports troops, equipment, or supplies."
+      },
+      "features": [
+        "Carries soldiers",
+        "Carries cargo",
+        "Used for logistics or evacuation"
+      ],
+      "examples": [
+        "Transport aircraft",
+        "Transport helicopter",
+        "Medical evacuation aircraft"
+      ],
+      "example_sentences": [
+        "This is a transport aircraft.",
+        "It carries people or equipment."
+      ]
+    },
+    {
+      "id": "reconnaissance_aircraft",
+      "label": "Reconnaissance",
+      "description": {
+        "a2": "This aircraft watches and collects information.",
+        "b1": "This aircraft gathers information and reports it to other units."
+      },
+      "features": [
+        "Has sensors or cameras",
+        "Collects information",
+        "Does not focus on fighting"
+      ],
+      "examples": [
+        "Reconnaissance aircraft",
+        "Surveillance drone",
+        "Maritime patrol aircraft"
+      ],
+      "example_sentences": [
+        "This is a reconnaissance aircraft.",
+        "It collects information."
+      ]
+    }
+  ],
+  "rules": [
+    "This step is not about the exact aircraft type.",
+    "First choose the mission category, then name the aircraft in the next step.",
+    "If you are not sure, choose Reconnaissance and explain why."
+  ],
+  "summary": "Combat aircraft fight. Transport aircraft move people and cargo. Reconnaissance aircraft observe."
+}

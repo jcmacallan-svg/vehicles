@@ -1,0 +1,85 @@
+{
+  "domain": "landmacht",
+  "step": "what",
+  "title": "Vehicle Classification – What?",
+  "intro": {
+    "question": "What kind of vehicle is this?",
+    "explanation": "In this step, you choose the main function of the vehicle. You do not need the exact name yet. There are only three possible answers."
+  },
+  "categories": [
+    {
+      "id": "combat_vehicle",
+      "label": "Combat vehicle",
+      "description": {
+        "a2": "A combat vehicle is made to fight the enemy.",
+        "b1": "A combat vehicle is designed to fight the enemy using weapons and armour."
+      },
+      "features": [
+        "Heavy weapons",
+        "Strong armour",
+        "Main role is fighting"
+      ],
+      "examples": [
+        "Battle Tank (BT)",
+        "Armoured Infantry Fighting Vehicle (AIFV)",
+        "Artillery",
+        "Air Defence"
+      ],
+      "example_sentences": [
+        "This is a combat vehicle.",
+        "It is used to fight the enemy."
+      ]
+    },
+    {
+      "id": "manoeuvre_transport_vehicle",
+      "label": "Manoeuvre / Transport vehicle",
+      "description": {
+        "a2": "This vehicle moves soldiers or units.",
+        "b1": "This vehicle is used to transport soldiers or perform reconnaissance."
+      },
+      "features": [
+        "Moves soldiers",
+        "Moves units",
+        "Used for reconnaissance"
+      ],
+      "examples": [
+        "Armoured Personnel Carrier (APC)",
+        "Armoured Car (AC)",
+        "Reconnaissance Vehicle (RV)"
+      ],
+      "example_sentences": [
+        "This is a manoeuvre vehicle.",
+        "It is used to transport soldiers."
+      ]
+    },
+    {
+      "id": "support_vehicle",
+      "label": "Support vehicle",
+      "description": {
+        "a2": "This vehicle helps other vehicles.",
+        "b1": "This vehicle supports other units and vehicles during operations."
+      },
+      "features": [
+        "Repairs vehicles",
+        "Recovers damaged vehicles",
+        "Builds bridges",
+        "Supports engineering tasks"
+      ],
+      "examples": [
+        "Armoured Recovery Vehicle (ARV)",
+        "Armoured Engineer Vehicle (AEV)",
+        "Armoured Vehicle Launched Bridge (AVLB)"
+      ],
+      "example_sentences": [
+        "This is a support vehicle.",
+        "It supports other units."
+      ]
+    }
+  ],
+  "rules": [
+    "This step is not about the exact vehicle type.",
+    "First choose the category, then name the vehicle in the next step.",
+    "If you are not sure, choose Support vehicle and explain why."
+  ],
+  "summary": "Combat vehicles fight. Manoeuvre vehicles move. Support vehicles help."
+}
