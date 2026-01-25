@@ -23,7 +23,8 @@
       "answer": "Actros Brandweerwagen",
       "aliases": [
         "actros brandweerwagen"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_amarok-pick-uptruck_2",
@@ -32,7 +33,8 @@
       "answer": "Amarok Pick Uptruck",
       "aliases": [
         "amarok pick uptruck"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_anaconda-terreinwagen_3",
@@ -41,7 +43,8 @@
       "answer": "Anaconda Terreinwagen",
       "aliases": [
         "anaconda terreinwagen"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_bandvagn-206-rupsvoertuig_4",
@@ -50,7 +53,8 @@
       "answer": "Bandvagn 206 Rupsvoertuig",
       "aliases": [
         "bandvagn 206 rupsvoertuig"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_bandvagn-s10-rupsvoertuig-viking_5",
@@ -59,7 +63,8 @@
       "answer": "Bandvagn S10 Rupsvoertuig Viking",
       "aliases": [
         "bandvagn s10 rupsvoertuig viking"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_boxer-pantserwielvoertuig_6",
@@ -68,7 +73,8 @@
       "answer": "Boxer Pantserwielvoertuig",
       "aliases": [
         "boxer pantserwielvoertuig"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_bushmaster_7",
@@ -77,7 +83,8 @@
       "answer": "Bushmaster",
       "aliases": [
         "bushmaster"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_cbrn-ontsmettingssysteem-zware-uitvoering_8",
@@ -86,7 +93,8 @@
       "answer": "CBRN Ontsmettingssysteem Zware Uitvoering",
       "aliases": [
         "cbrn ontsmettingssysteem zware uitvoering"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_cv90-infanteriegevechtsvoertuig_9",
@@ -95,7 +103,8 @@
       "answer": "CV90 Infanteriegevechtsvoertuig",
       "aliases": [
         "cv90 infanteriegevechtsvoertuig"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_daf-takelwagens_10",
@@ -104,7 +113,8 @@
       "answer": "DAF Takelwagens",
       "aliases": [
         "daf takelwagens"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_daf-trekker-opleggercombinatie_11",
@@ -113,7 +123,8 @@
       "answer": "DAF Trekker Opleggercombinatie",
       "aliases": [
         "daf trekker opleggercombinatie"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_daf-ya-4442-de-4-tonner_12",
@@ -122,7 +133,8 @@
       "answer": "DAF Ya 4442 De 4 Tonner",
       "aliases": [
         "daf ya 4442 de 4 tonner"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_daf-yac-2300_13",
@@ -131,7 +143,8 @@
       "answer": "DAF Yac 2300",
       "aliases": [
         "daf yac 2300"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_e-one-titan-crashtender_14",
@@ -140,7 +153,8 @@
       "answer": "E One Titan Crashtender",
       "aliases": [
         "e one titan crashtender"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_explosievenrobot-dragon-runner_15",
@@ -149,7 +163,8 @@
       "answer": "Explosievenrobot Dragon Runner",
       "aliases": [
         "explosievenrobot dragon runner"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_explosievenrobot-telemax_16",
@@ -158,7 +173,8 @@
       "answer": "Explosievenrobot Telemax",
       "aliases": [
         "explosievenrobot telemax"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_explosievenrobot-teodor_17",
@@ -167,7 +183,8 @@
       "answer": "Explosievenrobot Teodor",
       "aliases": [
         "explosievenrobot teodor"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_fennek-verkenningsvoertuig_18",
@@ -176,7 +193,8 @@
       "answer": "Fennek Verkenningsvoertuig",
       "aliases": [
         "fennek verkenningsvoertuig"
-      ]
+      ],
+      "category": "Support vehicle"
     },
     {
       "id": "lm_fuchs-pantservoertuig_19",
@@ -185,7 +203,8 @@
       "answer": "Fuchs Pantservoertuig",
       "aliases": [
         "fuchs pantservoertuig"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_grondverzetmachines_20",
@@ -194,7 +213,8 @@
       "answer": "Grondverzetmachines",
       "aliases": [
         "grondverzetmachines"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_ktm-motorfiets_21",
@@ -203,7 +223,8 @@
       "answer": "Ktm Motorfiets",
       "aliases": [
         "ktm motorfiets"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_land-rover-defender-110xd-ww_22",
@@ -212,7 +233,8 @@
       "answer": "Land Rover Defender 110xd WW",
       "aliases": [
         "land rover defender 110xd ww"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_leopard-1-beach-armoured-recovery-vehicle_23",
@@ -221,7 +243,8 @@
       "answer": "Leopard 1 Beach Armoured Recovery Vehicle",
       "aliases": [
         "leopard 1 beach armoured recovery vehicle"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_leopard-1-bergingstank_24",
@@ -230,7 +253,8 @@
       "answer": "Leopard 1 Bergingstank",
       "aliases": [
         "leopard 1 bergingstank"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_leopard-2-a6-gevechtstank_25",
@@ -239,7 +263,8 @@
       "answer": "Leopard 2 A6 Gevechtstank",
       "aliases": [
         "leopard 2 a6 gevechtstank"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_leopard-2-bergingstank-buffel_26",
@@ -248,7 +273,8 @@
       "answer": "Leopard 2 Bergingstank Buffel",
       "aliases": [
         "leopard 2 bergingstank buffel"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_leopard-2-brugleggende-tank-leguaan_27",
@@ -257,7 +283,8 @@
       "answer": "Leopard 2 Brugleggende Tank Leguaan",
       "aliases": [
         "leopard 2 brugleggende tank leguaan"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_leopard-2-geniedoorbraaksysteem-kodiak_28",
@@ -266,7 +293,8 @@
       "answer": "Leopard 2 Geniedoorbraaksysteem Kodiak",
       "aliases": [
         "leopard 2 geniedoorbraaksysteem kodiak"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_luchtmobiel-speciaal-voertuig_29",
@@ -275,7 +303,8 @@
       "answer": "Luchtmobiel Speciaal Voertuig",
       "aliases": [
         "luchtmobiel speciaal voertuig"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_manticore-terreinvoertuig_30",
@@ -284,7 +313,8 @@
       "answer": "Manticore Terreinvoertuig",
       "aliases": [
         "manticore terreinvoertuig"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_meldkamer-op-locatie_31",
@@ -293,7 +323,8 @@
       "answer": "Meldkamer Op Locatie",
       "aliases": [
         "meldkamer op locatie"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_mercedes-benz-290gd_32",
@@ -302,7 +333,8 @@
       "answer": "Mercedes Benz 290GD",
       "aliases": [
         "mercedes benz 290gd"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_mercedes-benz-g280-cdi_33",
@@ -311,7 +343,8 @@
       "answer": "Mercedes Benz G280 Cdi",
       "aliases": [
         "mercedes benz g280 cdi"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_mercedes-benz-sprinter-315-cdi_34",
@@ -320,7 +353,8 @@
       "answer": "Mercedes Benz Sprinter 315 Cdi",
       "aliases": [
         "mercedes benz sprinter 315 cdi"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_mlc-70-wegenmatsysteem_35",
@@ -329,7 +363,8 @@
       "answer": "MLC 70 Wegenmatsysteem",
       "aliases": [
         "mlc 70 wegenmatsysteem"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_mobiele-drinkwaterinstallatie_36",
@@ -338,7 +373,8 @@
       "answer": "Mobiele Drinkwaterinstallatie",
       "aliases": [
         "mobiele drinkwaterinstallatie"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_pantserhouwitser-2000nl_37",
@@ -347,7 +383,8 @@
       "answer": "Pantserhouwitser 2000nl",
       "aliases": [
         "pantserhouwitser 2000nl"
-      ]
+      ],
+      "category": "Support vehicle"
     },
     {
       "id": "lm_scania-gryphus-transportvoertuig_38",
@@ -356,7 +393,8 @@
       "answer": "Scania Gryphus Transportvoertuig",
       "aliases": [
         "scania gryphus transportvoertuig"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_scania-wissellaadsysteem_39",
@@ -365,7 +403,8 @@
       "answer": "Scania Wissellaadsysteem",
       "aliases": [
         "scania wissellaadsysteem"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_skoda-yeti_40",
@@ -374,7 +413,8 @@
       "answer": "Skoda Yeti",
       "aliases": [
         "skoda yeti"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_suzuki-king-quad_41",
@@ -383,7 +423,8 @@
       "answer": "Suzuki King Quad",
       "aliases": [
         "suzuki king quad"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_toyota-hilux-terreinwagen_42",
@@ -392,7 +433,8 @@
       "answer": "Toyota Hilux Terreinwagen",
       "aliases": [
         "toyota hilux terreinwagen"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_vector-terreinwagen-sof_43",
@@ -401,7 +443,8 @@
       "answer": "Vector Terreinwagen SOF",
       "aliases": [
         "vector terreinwagen sof"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_waterboorinstallatie_44",
@@ -410,7 +453,8 @@
       "answer": "Waterboorinstallatie",
       "aliases": [
         "waterboorinstallatie"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_yamaha-motorfiets_45",
@@ -419,7 +463,8 @@
       "answer": "Yamaha Motorfiets",
       "aliases": [
         "yamaha motorfiets"
-      ]
+      ],
+      "category": "Combat vehicle"
     },
     {
       "id": "lm_ypr-pantserrupsvoertuig_46",
@@ -428,7 +473,8 @@
       "answer": "Ypr Pantserrupsvoertuig",
       "aliases": [
         "ypr pantserrupsvoertuig"
-      ]
+      ],
+      "category": "Combat vehicle"
     }
   ],
   "service": "landmacht",

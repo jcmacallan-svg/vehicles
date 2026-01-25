@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import json
-import os
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
@@ -43,14 +42,12 @@ def find_options() -> Dict[str, List[str]]:
     raise FileNotFoundError("classification_options.json not found (looked in data/ and app/data/)")
 
 def get_str_list(item: Dict[str, Any], keys: List[str]) -> List[str]:
-    """Return list of strings for any of the keys found."""
     for k in keys:
         if k in item and item[k] is not None:
             v = item[k]
             if isinstance(v, list):
                 return [str(x) for x in v]
             if isinstance(v, str):
-                # allow "a, b, c" or single string
                 return [s.strip() for s in v.split(",") if s.strip()]
     return []
 
@@ -63,37 +60,34 @@ def get_str(item: Dict[str, Any], keys: List[str]) -> str:
 # --- Heuristics -----------------------------------------------------------
 
 LAND_ARMOURED = {"tank", "ifv", "afv", "armoured", "armored", "tracked", "mbt"}
-LAND_TROOP = {"apc", "troop", "infantry", "carrier", "transport", "personnel"}
-AIR_COMBAT = {"strike", "air superiority", "cas", "sead", "dead", "fighter", "bomber", "attack"}
-AIR_TRANSPORT = {"airlift", "transport", "medevac", "utility", "cargo", "tanker"}
-AIR_RECON = {"isr", "recon", "reconnaissance", "ew", "elint", "sigint", "aew", "awacs", "mpa", "maritime patrol"}
+LAND_TROOP    = {"apc", "troop", "infantry", "carrier", "transport", "personnel"}
 
-SEA_FIGHTING = {"asuw", "aaw", "asw", "strike", "frigate", "destroyer", "corvette", "submarine"}
-SEA_PATROL = {"patrol", "mcm", "mine countermeasures", "security", "coast", "interdiction"}
-SEA_SUPPORT = {"support", "auxiliary", "replenishment", "logistics", "amphib", "lpd", "jss", "tender", "survey", "salvage"}
+AIR_COMBAT    = {"strike", "air superiority", "cas", "sead", "dead", "fighter", "bomber", "attack"}
+AIR_TRANSPORT = {"airlift", "transport", "medevac", "utility", "cargo", "tanker"}
+AIR_RECON     = {"isr", "recon", "reconnaissance", "ew", "elint", "sigint", "aew", "awacs", "mpa", "maritime patrol"}
+
+SEA_FIGHTING  = {"asuw", "aaw", "asw", "strike", "frigate", "destroyer", "corvette", "submarine"}
+SEA_PATROL    = {"patrol", "mcm", "mine countermeasures", "security", "coast", "interdiction"}
+SEA_SUPPORT   = {"support", "auxiliary", "replenishment", "logistics", "amphib", "lpd", "jss", "tender", "survey", "salvage"}
 
 def normalize_tokens(*parts: List[str]) -> List[str]:
-    tokens = []
+    tokens: List[str] = []
     for p in parts:
         for s in p:
-            tokens.append(s.lower().strip())
+            tokens.append(str(s).lower().strip())
     return tokens
 
 def infer_land(item: Dict[str, Any]) -> Tuple[str, str]:
-    """
-    Returns (category, confidence) where confidence is 'high'|'medium'|'low'
-    """
     type_str = get_str(item, ["type", "vehicleType", "platformType", "class"])
     roles = get_str_list(item, ["roles", "nato_roles", "natoRoles", "role"])
     tags  = get_str_list(item, ["tags", "keywords"])
 
-    tokens = normalize_tokens([type_str], roles, tags)
+    blob = " ".join(normalize_tokens([type_str], roles, tags))
 
-    if any(t in " ".join(tokens) for t in LAND_ARMOURED):
-        return ("Armoured vehicle", "high")
-    if any(t in " ".join(tokens) for t in LAND_TROOP):
+    if any(k in blob for k in LAND_ARMOURED):
+        return ("Combat vehicle", "high")
+    if any(k in blob for k in LAND_TROOP):
         return ("Infantry / Troop transport", "high")
-    # fallback
     return ("Support vehicle", "low")
 
 def infer_air(item: Dict[str, Any]) -> Tuple[str, str]:
@@ -101,8 +95,7 @@ def infer_air(item: Dict[str, Any]) -> Tuple[str, str]:
     roles = get_str_list(item, ["roles", "nato_roles", "natoRoles", "role"])
     tags  = get_str_list(item, ["tags", "keywords"])
 
-    tokens = normalize_tokens([type_str], roles, tags)
-    blob = " ".join(tokens)
+    blob = " ".join(normalize_tokens([type_str], roles, tags))
 
     if any(k in blob for k in AIR_COMBAT):
         return ("Combat", "high")
@@ -111,11 +104,11 @@ def infer_air(item: Dict[str, Any]) -> Tuple[str, str]:
     if any(k in blob for k in AIR_RECON):
         return ("Reconnaissance", "high")
 
-    # weaker type-based fallback
     if "fighter" in blob or "attack" in blob or "bomber" in blob:
         return ("Combat", "medium")
     if "helicopter" in blob and ("transport" in blob or "utility" in blob):
         return ("Transport", "medium")
+
     return ("Reconnaissance", "low")
 
 def infer_sea(item: Dict[str, Any]) -> Tuple[str, str]:
@@ -123,8 +116,7 @@ def infer_sea(item: Dict[str, Any]) -> Tuple[str, str]:
     roles = get_str_list(item, ["roles", "nato_roles", "natoRoles", "role"])
     tags  = get_str_list(item, ["tags", "keywords"])
 
-    tokens = normalize_tokens([type_str], roles, tags)
-    blob = " ".join(tokens)
+    blob = " ".join(normalize_tokens([type_str], roles, tags))
 
     if any(k in blob for k in SEA_FIGHTING):
         return ("Fighting ship", "high")
@@ -133,7 +125,6 @@ def infer_sea(item: Dict[str, Any]) -> Tuple[str, str]:
     if any(k in blob for k in SEA_SUPPORT):
         return ("Support ship", "high")
 
-    # fallback
     return ("Support ship", "low")
 
 INFER = {
@@ -142,17 +133,36 @@ INFER = {
     "marine": infer_sea,
 }
 
-def iter_items(data: Any) -> List[Dict[str, Any]]:
+def iter_items(data: Any) -> Tuple[List[Dict[str, Any]], Any, str]:
     """
-    Support data as:
-    - list[dict]
-    - dict with 'items' list
+    Returns (items, owner, key)
+    - items: the list we will process
+    - owner: the dict that owns the list (or the list itself)
+    - key: the key in owner containing the list, or "" if data is already a list
+    Special case:
+    - if data contains {"categories": { ... }} then returns ([], data, "categories")
+      and main() will iterate buckets.
     """
     if isinstance(data, list):
-        return data
-    if isinstance(data, dict) and isinstance(data.get("items"), list):
-        return data["items"]
-    raise ValueError("Unsupported JSON format: expected a list or {items:[...]}")
+        return data, data, ""
+
+    if isinstance(data, dict):
+        for k in ["items", "vehicles", "data", "records", "entries"]:
+            if isinstance(data.get(k), list):
+                return data[k], data, k
+
+        # domain-keyed list
+        for k, v in data.items():
+            if isinstance(v, list) and v and isinstance(v[0], dict):
+                return v, data, k
+
+        if isinstance(data.get("categories"), dict):
+            return [], data, "categories"
+
+    raise ValueError(
+        "Unsupported JSON format. Expected list, or dict containing a list under one of "
+        "['items','vehicles','data','records','entries'] or a domain-keyed list."
+    )
 
 def main() -> None:
     data_dir = find_data_dir()
@@ -167,35 +177,40 @@ def main() -> None:
             continue
 
         data = load_json(path)
-        items = iter_items(data)
+        items, owner, key = iter_items(data)
 
         allowed = set(options[domain])
-
         changed = False
-        for it in items:
-            # existing category?
-            cat = it.get("category")
-            if isinstance(cat, str) and cat in allowed:
-                report["already_ok"].append((domain, it.get("id", it.get("name", "unknown"))))
-                continue
 
-            if isinstance(cat, str) and cat not in allowed:
-                # fix invalid existing category
+        def process_items(items_list: List[Dict[str, Any]]) -> None:
+            nonlocal changed
+            for it in items_list:
+                cat = it.get("category")
+                ident = it.get("id", it.get("name", "unknown"))
+
+                if isinstance(cat, str) and cat in allowed:
+                    report["already_ok"].append((domain, ident))
+                    continue
+
                 inferred, conf = INFER[domain](it)
                 it["category"] = inferred
                 changed = True
-                report["invalid_fixed"].append((domain, it.get("id", it.get("name", "unknown")), cat, inferred, conf))
-                if conf == "low":
-                    report["low_confidence"].append((domain, it.get("id", it.get("name", "unknown")), inferred))
-                continue
 
-            # no category: infer
-            inferred, conf = INFER[domain](it)
-            it["category"] = inferred
-            changed = True
-            report["updated"].append((domain, it.get("id", it.get("name", "unknown")), inferred, conf))
-            if conf == "low":
-                report["low_confidence"].append((domain, it.get("id", it.get("name", "unknown")), inferred))
+                if isinstance(cat, str) and cat not in allowed:
+                    report["invalid_fixed"].append((domain, ident, cat, inferred, conf))
+                else:
+                    report["updated"].append((domain, ident, inferred, conf))
+
+                if conf == "low":
+                    report["low_confidence"].append((domain, ident, inferred))
+
+        # Special case: nested buckets under "categories"
+        if key == "categories" and isinstance(owner.get("categories"), dict):
+            for bucket_name, bucket_items in owner["categories"].items():
+                if isinstance(bucket_items, list) and (not bucket_items or isinstance(bucket_items[0], dict)):
+                    process_items(bucket_items)
+        else:
+            process_items(items)
 
         if changed:
             save_json(path, data)
@@ -203,7 +218,6 @@ def main() -> None:
         else:
             print(f"[OK] No changes needed for {path}")
 
-    # write report
     report_path = ROOT / "tools" / "apply_step1_categories_report.json"
     save_json(report_path, report)
     print(f"[DONE] Report written to {report_path}")

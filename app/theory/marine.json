@@ -1,0 +1,79 @@
+{
+  "title": "Royal Netherlands Navy – NATO role classification",
+  "intro": [
+    "In NATO recognition, classify ships by role and capability.",
+    "Use simple English: 'This is a … It is used for …'."
+  ],
+  "items": {
+    "Submarine": {
+      "bullets": [
+        "Operates underwater for stealth.",
+        "Used for intelligence and sea denial.",
+        "Carries torpedoes and sensors."
+      ],
+      "why_not": "Not a surface ship because it operates mainly underwater.",
+      "example_asset": null,
+      "example_answer": null
+    },
+    "Frigate": {
+      "bullets": [
+        "Multi-role warship for escort and task groups.",
+        "Often used for air defence and anti-submarine warfare.",
+        "Has advanced sensors and weapons."
+      ],
+      "why_not": "Not a patrol vessel because it has heavier combat capability.",
+      "example_asset": "luchtverdedigings-en-commandofregat-lcf",
+      "example_answer": "Luchtverdedigings- en commandofregat (LCF)"
+    },
+    "Patrol Vessel": {
+      "bullets": [
+        "Used for maritime security and patrol tasks.",
+        "Usually lighter weapons than major warships.",
+        "Long endurance for presence at sea."
+      ],
+      "why_not": "Not a frigate because it has fewer sensors and lighter weapons.",
+      "example_asset": "patrouilleschip-opv",
+      "example_answer": "Patrouilleschip (OPV)"
+    },
+    "Amphibious Ship": {
+      "bullets": [
+        "Used to transport troops and vehicles.",
+        "Can support landings with landing craft and helicopters.",
+        "Acts as a command and support platform."
+      ],
+      "why_not": "Not a frigate because its main role is transport and landing support.",
+      "example_asset": "amfibisch-transportschip-lpd",
+      "example_answer": "Amfibisch transportschip (LPD)"
+    },
+    "Mine Countermeasures Vessel": {
+      "bullets": [
+        "Used to detect and neutralize sea mines.",
+        "Specialized sonar and mine disposal systems.",
+        "Often supports safe routes for other ships."
+      ],
+      "why_not": "Not a patrol vessel because its primary mission is mine warfare.",
+      "example_asset": "mijnenjagers",
+      "example_answer": "Mijnenjagers"
+    },
+    "Support Vessel": {
+      "bullets": [
+        "Provides fuel, food, ammunition, or repairs at sea.",
+        "Keeps task groups operational for longer.",
+        "Usually not designed for front-line combat."
+      ],
+      "why_not": "Not a frigate because its main role is logistics, not combat.",
+      "example_asset": "joint-logistic-support-ship-jss",
+      "example_answer": "Joint logistic Support Ship (JSS)"
+    },
+    "Other": {
+      "bullets": [
+        "Special-purpose vessels that do not fit the main roles.",
+        "Classify by best match; if unsure, use Other.",
+        "Teacher can discuss the closest NATO role."
+      ],
+      "why_not": "Used when the primary role is unclear or unique.",
+      "example_asset": "onderzeeboten",
+      "example_answer": "Onderzeeboten"
+    }
+  }
+}

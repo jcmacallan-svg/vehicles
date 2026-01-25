@@ -2,224 +2,202 @@
   "quizLength": 10,
   "mcqOptions": 6,
   "classes": [
-    "Submarine",
     "Frigate",
+    "Destroyer",
     "Patrol Vessel",
     "Amphibious Ship",
-    "Mine Countermeasures Vessel",
-    "Support Vessel",
-    "Other"
+    "Submarine",
+    "Support Vessel"
   ],
   "questions": [
     {
       "id": "nav_amfibisch-transportschip-lpd",
       "asset": "amfibisch-transportschip-lpd",
-      "class": "Amphibious Ship",
+      "class": "Naval Vessel",
       "answer": "Amfibisch transportschip (LPD)",
       "aliases": [
         "amfibisch transportschip (lpd)"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_joint-logistic-support-ship-jss",
       "asset": "joint-logistic-support-ship-jss",
-      "class": "Support Vessel",
+      "class": "Naval Vessel",
       "answer": "Joint logistic Support Ship (JSS)",
       "aliases": [
         "joint logistic support ship (jss)"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_combat-support-ship-css",
       "asset": "combat-support-ship-css",
-      "class": "Support Vessel",
+      "class": "Naval Vessel",
       "answer": "Combat Support Ship (CSS)",
       "aliases": [
         "combat support ship (css)"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_luchtverdedigings-en-commandofregat-lcf",
       "asset": "luchtverdedigings-en-commandofregat-lcf",
-      "class": "Frigate",
+      "class": "Naval Vessel",
       "answer": "Luchtverdedigings- en commandofregat (LCF)",
       "aliases": [
         "luchtverdedigings- en commandofregat (lcf)"
-      ],
-      "category": "Fighting ship"
+      ]
     },
     {
       "id": "nav_multipurposefregat-m-fregat",
       "asset": "multipurposefregat-m-fregat",
-      "class": "Frigate",
+      "class": "Naval Vessel",
       "answer": "Multipurposefregat (M-fregat)",
       "aliases": [
         "multipurposefregat (m-fregat)"
-      ],
-      "category": "Fighting ship"
+      ]
     },
     {
       "id": "nav_patrouilleschip-opv",
       "asset": "patrouilleschip-opv",
-      "class": "Patrol Vessel",
+      "class": "Naval Vessel",
       "answer": "Patrouilleschip (OPV)",
       "aliases": [
         "patrouilleschip (opv)"
-      ],
-      "category": "Patrol ship"
+      ]
     },
     {
       "id": "nav_onderzeeboten",
       "asset": "onderzeeboten",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "Onderzeeboten",
       "aliases": [
         "onderzeeboten"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_mijnenjagers",
       "asset": "mijnenjagers",
-      "class": "Mine Countermeasures Vessel",
+      "class": "Naval Vessel",
       "answer": "Mijnenjagers",
       "aliases": [
         "mijnenjagers"
-      ],
-      "category": "Patrol ship"
+      ]
     },
     {
       "id": "nav_lcu-landingsvaartuig-materieel",
       "asset": "lcu-landingsvaartuig-materieel",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "LCU-landingsvaartuig (materieel)",
       "aliases": [
         "lcu-landingsvaartuig (materieel)"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_lcvp-landingsvaartuig-personeel",
       "asset": "lcvp-landingsvaartuig-personeel",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "LCVP-landingsvaartuig (personeel)",
       "aliases": [
         "lcvp-landingsvaartuig (personeel)"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_hydrografische-opnemingsvaartuigen",
       "asset": "hydrografische-opnemingsvaartuigen",
-      "class": "Support Vessel",
+      "class": "Naval Vessel",
       "answer": "Hydrografische opnemingsvaartuigen",
       "aliases": [
         "hydrografische opnemingsvaartuigen"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_ondersteuningsvaartuig",
       "asset": "ondersteuningsvaartuig",
-      "class": "Support Vessel",
+      "class": "Naval Vessel",
       "answer": "Ondersteuningsvaartuig",
       "aliases": [
         "ondersteuningsvaartuig"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_torpedowerkschip",
       "asset": "torpedowerkschip",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "Torpedowerkschip",
       "aliases": [
         "torpedowerkschip"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_duikvaartuigen",
       "asset": "duikvaartuigen",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "Duikvaartuigen",
       "aliases": [
         "duikvaartuigen"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_sleepboten",
       "asset": "sleepboten",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "Sleepboten",
       "aliases": [
         "sleepboten"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_frisc-motorboot",
       "asset": "frisc-motorboot",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "Frisc-motorboot",
       "aliases": [
         "frisc-motorboot"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_rhib-motorboot",
       "asset": "rhib-motorboot",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "RHIB-motorboot",
       "aliases": [
         "rhib-motorboot"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_zeilend-opleidingsschip",
       "asset": "zeilend-opleidingsschip",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "Zeilend opleidingsschip",
       "aliases": [
         "zeilend opleidingsschip"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_marineopleidingsvaartuig",
       "asset": "marineopleidingsvaartuig",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "Marineopleidingsvaartuig",
       "aliases": [
         "marineopleidingsvaartuig"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_multifunctionele-havenvaartuigen",
       "asset": "multifunctionele-havenvaartuigen",
-      "class": "Other",
+      "class": "Naval Vessel",
       "answer": "Multifunctionele havenvaartuigen",
       "aliases": [
         "multifunctionele havenvaartuigen"
-      ],
-      "category": "Support ship"
+      ]
     },
     {
       "id": "nav_compact-hydrografisch-opnamevaartuig",
       "asset": "compact-hydrografisch-opnamevaartuig",
-      "class": "Support Vessel",
+      "class": "Naval Vessel",
       "answer": "Compact hydrografisch opnamevaartuig",
       "aliases": [
         "compact hydrografisch opnamevaartuig"
-      ],
-      "category": "Support ship"
+      ]
     }
   ]
 }

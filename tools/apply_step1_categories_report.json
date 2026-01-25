@@ -1,0 +1,460 @@
+{
+  "updated": [],
+  "already_ok": [
+    [
+      "landmacht",
+      "lm_fennek-verkenningsvoertuig_18"
+    ],
+    [
+      "landmacht",
+      "lm_pantserhouwitser-2000nl_37"
+    ],
+    [
+      "luchtmacht",
+      "af_f-35-lightning-ii-jachtvliegtuig_1"
+    ],
+    [
+      "luchtmacht",
+      "af_f-16-uit-dienst_2"
+    ],
+    [
+      "luchtmacht",
+      "af_apache-gevechtshelikopter-ah-64_3"
+    ],
+    [
+      "luchtmacht",
+      "af_nh90-maritieme-gevechtshelikopter_4"
+    ],
+    [
+      "luchtmacht",
+      "af_chinook-transporthelikopter_5"
+    ],
+    [
+      "luchtmacht",
+      "af_cougar-transporthelikopter_6"
+    ],
+    [
+      "luchtmacht",
+      "af_mq-9-reaper_7"
+    ],
+    [
+      "luchtmacht",
+      "af_black-hornet-onbemand-verkenningssysteem_8"
+    ],
+    [
+      "luchtmacht",
+      "af_raven-onbemand-verkenningssysteem_9"
+    ],
+    [
+      "luchtmacht",
+      "af_x-300-integrator-onbemand-verkenningssysteem_10"
+    ],
+    [
+      "luchtmacht",
+      "af_c-130-hercules-transportvliegtuig_11"
+    ],
+    [
+      "luchtmacht",
+      "af_pilatus-pc-7-turbo-trainer_12"
+    ],
+    [
+      "luchtmacht",
+      "af_gulfstream-g650er_13"
+    ],
+    [
+      "marine",
+      "nav_amfibisch-transportschip-lpd"
+    ],
+    [
+      "marine",
+      "nav_joint-logistic-support-ship-jss"
+    ],
+    [
+      "marine",
+      "nav_combat-support-ship-css"
+    ],
+    [
+      "marine",
+      "nav_luchtverdedigings-en-commandofregat-lcf"
+    ],
+    [
+      "marine",
+      "nav_multipurposefregat-m-fregat"
+    ],
+    [
+      "marine",
+      "nav_patrouilleschip-opv"
+    ],
+    [
+      "marine",
+      "nav_onderzeeboten"
+    ],
+    [
+      "marine",
+      "nav_mijnenjagers"
+    ],
+    [
+      "marine",
+      "nav_lcu-landingsvaartuig-materieel"
+    ],
+    [
+      "marine",
+      "nav_lcvp-landingsvaartuig-personeel"
+    ],
+    [
+      "marine",
+      "nav_hydrografische-opnemingsvaartuigen"
+    ],
+    [
+      "marine",
+      "nav_ondersteuningsvaartuig"
+    ],
+    [
+      "marine",
+      "nav_torpedowerkschip"
+    ],
+    [
+      "marine",
+      "nav_duikvaartuigen"
+    ],
+    [
+      "marine",
+      "nav_sleepboten"
+    ],
+    [
+      "marine",
+      "nav_frisc-motorboot"
+    ],
+    [
+      "marine",
+      "nav_rhib-motorboot"
+    ],
+    [
+      "marine",
+      "nav_zeilend-opleidingsschip"
+    ],
+    [
+      "marine",
+      "nav_marineopleidingsvaartuig"
+    ],
+    [
+      "marine",
+      "nav_multifunctionele-havenvaartuigen"
+    ],
+    [
+      "marine",
+      "nav_compact-hydrografisch-opnamevaartuig"
+    ]
+  ],
+  "invalid_fixed": [
+    [
+      "landmacht",
+      "lm_actros-brandweerwagen_1",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_amarok-pick-uptruck_2",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_anaconda-terreinwagen_3",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_bandvagn-206-rupsvoertuig_4",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_bandvagn-s10-rupsvoertuig-viking_5",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_boxer-pantserwielvoertuig_6",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_bushmaster_7",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_cbrn-ontsmettingssysteem-zware-uitvoering_8",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_cv90-infanteriegevechtsvoertuig_9",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_daf-takelwagens_10",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_daf-trekker-opleggercombinatie_11",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_daf-ya-4442-de-4-tonner_12",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_daf-yac-2300_13",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_e-one-titan-crashtender_14",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_explosievenrobot-dragon-runner_15",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_explosievenrobot-telemax_16",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_explosievenrobot-teodor_17",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_fuchs-pantservoertuig_19",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_grondverzetmachines_20",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_ktm-motorfiets_21",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_land-rover-defender-110xd-ww_22",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_leopard-1-beach-armoured-recovery-vehicle_23",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_leopard-1-bergingstank_24",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_leopard-2-a6-gevechtstank_25",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_leopard-2-bergingstank-buffel_26",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_leopard-2-brugleggende-tank-leguaan_27",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_leopard-2-geniedoorbraaksysteem-kodiak_28",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_luchtmobiel-speciaal-voertuig_29",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_manticore-terreinvoertuig_30",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_meldkamer-op-locatie_31",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_mercedes-benz-290gd_32",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_mercedes-benz-g280-cdi_33",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_mercedes-benz-sprinter-315-cdi_34",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_mlc-70-wegenmatsysteem_35",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_mobiele-drinkwaterinstallatie_36",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_scania-gryphus-transportvoertuig_38",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_scania-wissellaadsysteem_39",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_skoda-yeti_40",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_suzuki-king-quad_41",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_toyota-hilux-terreinwagen_42",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_vector-terreinwagen-sof_43",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_waterboorinstallatie_44",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_yamaha-motorfiets_45",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ],
+    [
+      "landmacht",
+      "lm_ypr-pantserrupsvoertuig_46",
+      "Armoured vehicle",
+      "Combat vehicle",
+      "high"
+    ]
+  ],
+  "low_confidence": []
+}

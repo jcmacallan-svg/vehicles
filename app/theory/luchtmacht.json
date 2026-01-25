@@ -1,0 +1,69 @@
+{
+  "title": "Royal Netherlands Air Force – NATO role classification",
+  "intro": [
+    "In NATO recognition, classify by role first (what it is used for).",
+    "Use simple English: 'This is a … It is used for …'."
+  ],
+  "items": {
+    "Fighter Aircraft": {
+      "bullets": [
+        "Used for air combat and precision strike missions.",
+        "Fast aircraft with advanced sensors.",
+        "Often armed and built for high performance."
+      ],
+      "why_not": "Not a transport aircraft because it is not designed to carry cargo or many passengers.",
+      "example_asset": "f-35-lightning-ii-jachtvliegtuig",
+      "example_answer": "F-35 Lightning II-jachtvliegtuig"
+    },
+    "Transport Aircraft": {
+      "bullets": [
+        "Used to move people and cargo over distance.",
+        "Large internal space for cargo or passengers.",
+        "Often used for logistics and humanitarian support."
+      ],
+      "why_not": "Not a fighter aircraft because it is not built for air-to-air combat.",
+      "example_asset": "c-130-hercules-transportvliegtuig",
+      "example_answer": "C-130 Hercules-transportvliegtuig"
+    },
+    "Helicopter": {
+      "bullets": [
+        "Can take off and land vertically.",
+        "Can hover and fly at low speed.",
+        "Used for transport, attack, and rescue."
+      ],
+      "why_not": "Not a fixed-wing aircraft because it uses rotors, not wings, for lift.",
+      "example_asset": "apache-gevechtshelikopter-ah-64",
+      "example_answer": "Apache-gevechtshelikopter (AH-64)"
+    },
+    "Trainer Aircraft": {
+      "bullets": [
+        "Used for pilot training.",
+        "Usually lighter and simpler than combat aircraft.",
+        "Often unarmed or lightly equipped."
+      ],
+      "why_not": "Not a fighter aircraft because its main role is training, not combat.",
+      "example_asset": "pilatus-pc-7-turbo-trainer",
+      "example_answer": "Pilatus PC-7 Turbo Trainer"
+    },
+    "Uncrewed Aerial System (UAS)": {
+      "bullets": [
+        "No pilot onboard (remotely piloted or autonomous).",
+        "Often used for surveillance and reconnaissance.",
+        "Can stay airborne for long periods."
+      ],
+      "why_not": "Not a helicopter because it is uncrewed and operates differently.",
+      "example_asset": "mq-9-reaper",
+      "example_answer": "MQ-9 Reaper"
+    },
+    "Other": {
+      "bullets": [
+        "Special-purpose aircraft or items that do not fit the main roles.",
+        "Classify by best match; if unsure, use Other.",
+        "Teacher can discuss the closest NATO role."
+      ],
+      "why_not": "Used when the primary role is unclear or unique.",
+      "example_asset": null,
+      "example_answer": null
+    }
+  }
+}
