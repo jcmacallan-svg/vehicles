@@ -1,0 +1,17 @@
+{
+  "landmacht": [
+    "Armoured vehicle",
+    "Infantry / Troop transport",
+    "Support vehicle"
+  ],
+  "luchtmacht": [
+    "Combat",
+    "Transport",
+    "Reconnaissance"
+  ],
+  "marine": [
+    "Fighting ship",
+    "Patrol ship",
+    "Support ship"
+  ]
+}
